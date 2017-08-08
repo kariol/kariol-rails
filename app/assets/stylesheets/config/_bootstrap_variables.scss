@@ -14,7 +14,8 @@ $brand-warning:   $orange;
 
 // Buttons & inputs' radius
 $border-radius-base:  6px;
-$border-radius-large: 9px;
-$border-radius-small: 3px;
+$border-radius-large: 8px;
+$border-radius-small: 4px;
 
-// Override other variables below!
+// Other variables
+$input-border-focus: $brand-primary;
