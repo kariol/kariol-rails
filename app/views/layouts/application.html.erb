@@ -26,10 +26,19 @@
     <meta name="twitter:image:src" content="<%= t('meta-url') + image_path('og_image.jpg') %>">
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-    <%= yield %>
+  <body class="<%= controller_name %> <%= action_name %>">
+    <% if action_name == 'home' %>
+      <%= yield %>
+    <% else %>
+      <div class="container">
+        <%= yield %>
+      </div>
+    <% end %>
+
+    <%= render 'shared/footer' %>
+
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload', 'data-turbolinks-eval': 'false' %>
   </body>
 </html>
