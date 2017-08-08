@@ -1,21 +1,33 @@
 <div class="banner" style="background-image: linear-gradient(rgba(54, 66, 112, 0.9), rgba(115, 188, 149, 0.8)), url(<%= image_path 'banner.jpg' %>);">
   <div class="banner-container">
     <div class="banner-title">
-      <%= image_tag 'logo.png' %>
-      <h1>La navette qui donne envie d'aller au travail</h1>
+      <div class="row">
+        <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3">
+          <%= image_tag 'logo.png' %>
+          <h1>La navette qui donne envie d'aller au travail</h1>
+        </div>
+      </div>
     </div>
     <div class="banner-content">
-      <p><strong>Vous êtes une entreprise</strong> et êtes intéressée par notre service pour vos employés ?</p>
-      <p><strong>Vous êtes un particulier</strong> et cherchez une alternative à l'utilisation de votre voiture individuelle ?</p>
+      <div class="row">
+        <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3">
+          <p><strong>Vous êtes une entreprise</strong> et êtes intéressée par notre service pour vos employés ?</p>
+          <p><strong>Vous êtes un particulier</strong> et cherchez une alternative à l'utilisation de votre voiture individuelle ?</p>
+        </div>
+      </div>
     </div>
     <div class="banner-form">
-      <p>Laissez-nous votre adresse email pour recevoir nos informations</p>
-      <form>
-        <div class="form-group">
-          <input type="email" class="form-control" placeholder="Votre email">
+      <div class="row">
+        <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3">
+          <p>Laissez-nous votre adresse email pour recevoir nos informations</p>
+          <form>
+            <div class="form-group">
+              <input type="email" class="form-control" placeholder="Votre email">
+            </div>
+            <button type="submit" class="btn btn-primary">Envoyer</button>
+          </form>
         </div>
-        <button type="submit" class="btn btn-primary">Envoyer</button>
-      </form>
+      </div>
     </div>
   </div>
 </div>
