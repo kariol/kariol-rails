@@ -34,6 +34,8 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 # Custom Back
+gem 'raygun4ruby'
+gem 'scout_apm'
 
 # Custom Front
 gem 'bootstrap-sass'
