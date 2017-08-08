@@ -1,9 +1,9 @@
 // Import Google fonts
-// @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:400,100,300,700,500");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Raleway:100,300,400,500,700");
 
 // Define fonts for body and headers
-$body-font: "Avenir Roman", "Helvetica", "sans-serif";
-$headers-font: "Avenir Black", "Helvetica", "sans-serif";
+$body-font: "Open Sans", "Helvetica", "sans-serif";
+$headers-font: "Raleway", "Helvetica", "sans-serif";
 
 // To use a font file (.woff) uncomment following lines
 // @font-face {
@@ -14,19 +14,3 @@ $headers-font: "Avenir Black", "Helvetica", "sans-serif";
 //        font-url('FontFile.ttf') format('truetype')
 // }
 // $my-font: "Font Name";
-
-@font-face {
-  font-family: 'Avenir Roman';
-  src: font-url('Avenir-Roman.eot');
-  src: font-url('Avenir-Roman.eot?#iefix') format('embedded-opentype'),
-       font-url('Avenir-Roman.woff') format('woff'),
-       font-url('Avenir-Roman.ttf') format('truetype')
-}
-
-@font-face {
-  font-family: 'Avenir Black';
-  src: font-url('Avenir-Black.eot');
-  src: font-url('Avenir-Black.eot?#iefix') format('embedded-opentype'),
-       font-url('Avenir-Black.woff') format('woff'),
-       font-url('Avenir-Black.ttf') format('truetype')
-}
