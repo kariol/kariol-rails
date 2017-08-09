@@ -39,6 +39,7 @@ gem 'scout_apm'
 
 # Custom Front
 gem 'bootstrap-sass'
+gem 'font-awesome-sass'
 gem 'jquery-rails'
 
 group :development, :test do
