@@ -8,6 +8,7 @@
         </div>
       </div>
     </div>
+
     <div class="banner-content">
       <div class="row">
         <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3">
@@ -16,11 +17,21 @@
         </div>
       </div>
     </div>
+
     <div class="banner-form">
       <div class="row">
         <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3">
           <p>Laissez-nous votre adresse email pour recevoir nos informations</p>
-          <%= render 'shared/mailchimp' %>
+          <form action="//kariol.us16.list-manage.com/subscribe/post?u=6d2bd7f2b51bd166b20ae11d9&amp;id=e573aa2cd4" method="post" target="_blank" novalidate>
+            <div class="form-group">
+              <input type="email" value="" name="EMAIL" class="form-control" placeholder="Votre email" required>
+            </div>
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;" aria-hidden="true">
+              <input type="text" name="b_6d2bd7f2b51bd166b20ae11d9_e573aa2cd4" tabindex="-1" value="">
+            </div>
+            <input type="submit" value="Envoyer" name="subscribe" class="btn btn-primary">
+          </form>
         </div>
       </div>
     </div>
