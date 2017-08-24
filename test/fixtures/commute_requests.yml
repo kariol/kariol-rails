@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  origin: MyString
+  destination: MyString
+  arrival_time: 2017-08-24 09:44:11
+  email: MyString
+  origin_latitude: 1.5
+  origin_longitude: 1.5
+  destination_latitude: 1.5
+  destination_longitude: 1.5
+
+two:
+  origin: MyString
+  destination: MyString
+  arrival_time: 2017-08-24 09:44:11
+  email: MyString
+  origin_latitude: 1.5
+  origin_longitude: 1.5
+  destination_latitude: 1.5
+  destination_longitude: 1.5
