@@ -29,7 +29,7 @@
   </head>
 
   <body class="<%= controller_name %> <%= action_name %>">
-    <% if action_name == 'home' %>
+    <% if controller_name == 'pages' %>
       <%= yield %>
     <% else %>
       <div class="container">
