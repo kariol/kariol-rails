@@ -1,7 +1,8 @@
 document.addEventListener('turbolinks:load', function() {
-  if($(".alert-info").length > 0) {
+  var alert_info = $('.alert-info');
+  if (alert_info) {
     setTimeout(function(){
-      $('.alert-info').alert('close');
+      alert_info.alert('close');
     }, 6000);
   };
 });

@@ -2,10 +2,15 @@
   <%= f.simple_fields_for :origin do |o| %>
     <%= o.input :complete, label: false, placeholder: 'Ma maison' %>
   <% end %>
+
   <%= f.simple_fields_for :destination do |d| %>
     <%= d.input :complete, label: false, placeholder: 'Mon travail' %>
   <% end %>
-  <%= f.input :arrival_time, as: :string, label: false, placeholder: "Mon heure d'arrivée" %>
+
+  <%= f.input :arrival_time, label: false, prompt: "Mon heure d'arrivée",
+              collection: ['07:00', '07:30', '08:00', '08:30', '09:00', '09:30'] %>
+
   <%= f.input :email, label: false, placeholder: 'Mon mail' %>
+  
   <%= f.submit "Je m'inscris 🚌", class: 'btn btn-primary' %>
 <% end %>
