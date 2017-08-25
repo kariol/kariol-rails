@@ -29,6 +29,8 @@
   </head>
 
   <body class="<%= controller_name %> <%= action_name %>">
+    <%= render 'shared/flashes' %>
+
     <% if controller_name == 'pages' %>
       <%= yield %>
     <% else %>

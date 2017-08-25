@@ -1,0 +1,13 @@
+.alert {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  text-align: center;
+  color: white;
+}
+.alert-info {
+  background: $blue;
+}
+.alert-warning {
+  background: $red;
+}
