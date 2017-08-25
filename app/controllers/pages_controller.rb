@@ -1,5 +1,7 @@
 class PagesController < ApplicationController
-  def home; end
+  def home
+    @commute_request = CommuteRequest.new
+  end
 
   def enterprise; end
 

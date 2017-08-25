@@ -37,3 +37,11 @@
     </div>
   </div>
 </div>
+
+<%= simple_form_for @commute_request do |f| %>
+  <%= f.input :origin %>
+  <%= f.input :destination %>
+  <%= f.input :arrival_time %>
+  <%= f.input :email %>
+  <%= f.submit %>
+<% end %>

@@ -1,0 +1,4 @@
+en:
+  errors:
+    messages:
+      not_a_valid_email: must be a valid email
