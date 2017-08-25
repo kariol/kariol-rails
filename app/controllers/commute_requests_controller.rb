@@ -4,7 +4,7 @@ class CommuteRequestsController < ApplicationController
 
     respond_to do |format|
       if @commute_request.save
-        format.html { redirect_to root_path, notice: 'Commute Request was successfully created.' }
+        format.html { redirect_to root_path, notice: 'Votre demande a été prise en compte.' }
       else
         format.html { render :new }
       end

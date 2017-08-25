@@ -1,16 +1,22 @@
-<%= simple_form_for @commute_request, html: { class: 'form-inline' } do |f| %>
+<%= simple_form_for @commute_request do |f| %>
   <%= f.simple_fields_for :origin do |o| %>
-    <%= o.input :complete, label: false, placeholder: 'Ma maison' %>
+    <%= o.input :complete, label: false, placeholder: '🏠 Ma maison' %>
   <% end %>
 
   <%= f.simple_fields_for :destination do |d| %>
-    <%= d.input :complete, label: false, placeholder: 'Mon travail' %>
+    <%= d.input :complete, label: false, placeholder: '🏢 Mon travail' %>
   <% end %>
 
-  <%= f.input :arrival_time, label: false, prompt: "Mon heure d'arrivée",
-              collection: ['07:00', '07:30', '08:00', '08:30', '09:00', '09:30'] %>
+  <div class="row">
+    <div class="col-xs-3">
+      <%= f.input :arrival_time, label: false, prompt: '🕗 Arrivée',
+                  collection: ['07h00', '07h30', '08h00', '08h30', '09h00', '09h30'] %>
+    </div>
 
-  <%= f.input :email, label: false, placeholder: 'Mon mail' %>
-  
-  <%= f.submit "Je m'inscris 🚌", class: 'btn btn-primary' %>
+    <div class="col-xs-9">
+      <%= f.input :email, label: false, placeholder: '📧 jean-michel@kariol.co' %>
+    </div>
+  </div>
+
+  <%= f.submit "J'embarque 🚌", class: 'btn btn-primary' %>
 <% end %>
