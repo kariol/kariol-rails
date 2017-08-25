@@ -6,7 +6,7 @@ class CommuteRequestsController < ApplicationController
       if @commute_request.save
         format.html { redirect_to root_path, notice: 'Commute Request was successfully created.' }
       else
-        format.html { render 'pages/home' }
+        format.html { render :new }
       end
     end
   end
@@ -14,6 +14,10 @@ class CommuteRequestsController < ApplicationController
   private
 
   def commute_request_params
-    params.require(:commute_request).permit(:origin, :destination, :arrival_time, :email)
+    params.require(:commute_request).permit(
+      :arrival_time, :email,
+      origin_attributes: [:complete],
+      destination_attributes: [:complete]
+    )
   end
 end

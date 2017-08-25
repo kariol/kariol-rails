@@ -1,0 +1,11 @@
+<%= simple_form_for @commute_request, html: { class: 'form-inline' } do |f| %>
+  <%= f.simple_fields_for :origin do |o| %>
+    <%= o.input :complete, label: false, placeholder: 'Ma maison' %>
+  <% end %>
+  <%= f.simple_fields_for :destination do |d| %>
+    <%= d.input :complete, label: false, placeholder: 'Mon travail' %>
+  <% end %>
+  <%= f.input :arrival_time, as: :string, label: false, placeholder: "Mon heure d'arrivée" %>
+  <%= f.input :email, label: false, placeholder: 'Mon mail' %>
+  <%= f.submit "Je m'inscris 🚌", class: 'btn btn-primary' %>
+<% end %>

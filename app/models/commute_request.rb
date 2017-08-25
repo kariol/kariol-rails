@@ -9,6 +9,9 @@ class CommuteRequest < ApplicationRecord
   belongs_to :origin, class_name: 'Address'
   belongs_to :destination, class_name: 'Address'
 
+  accepts_nested_attributes_for :origin
+  accepts_nested_attributes_for :destination
+
   # == Validations ==========================================================
   validates :arrival_time, presence: true
   validates :email,
