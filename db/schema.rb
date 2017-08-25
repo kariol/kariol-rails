@@ -10,22 +10,30 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170824074411) do
+ActiveRecord::Schema.define(version: 20170825180101) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "commute_requests", force: :cascade do |t|
-    t.string "origin"
-    t.string "destination"
-    t.time "arrival_time"
-    t.string "email"
-    t.float "origin_latitude"
-    t.float "origin_longitude"
-    t.float "destination_latitude"
-    t.float "destination_longitude"
+  create_table "addresses", force: :cascade do |t|
+    t.string "complete"
+    t.float "latitude"
+    t.float "longitude"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
+  create_table "commute_requests", force: :cascade do |t|
+    t.time "arrival_time"
+    t.string "email"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.bigint "origin_id"
+    t.bigint "destination_id"
+    t.index ["destination_id"], name: "index_commute_requests_on_destination_id"
+    t.index ["origin_id"], name: "index_commute_requests_on_origin_id"
+  end
+
+  add_foreign_key "commute_requests", "addresses", column: "destination_id"
+  add_foreign_key "commute_requests", "addresses", column: "origin_id"
 end

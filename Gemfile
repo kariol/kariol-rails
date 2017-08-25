@@ -36,8 +36,10 @@ gem 'jbuilder', '~> 2.5'
 # Custom Back
 gem 'figaro'
 gem 'geocoder'
+gem 'rails-i18n'
 gem 'raygun4ruby'
 gem 'scout_apm'
+gem 'simple_form'
 
 # Custom Front
 gem 'bootstrap-sass'

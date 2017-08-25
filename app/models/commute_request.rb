@@ -4,21 +4,26 @@ class CommuteRequest < ApplicationRecord
   # == Attributes ===========================================================
 
   # == Extensions ===========================================================
-  geocoded_by :origin, latitude: :origin_latitude, longitude: :origin_longitude
-  geocoded_by :destination, latitude: :destination_latitude, longitude: :destination_longitude
 
   # == Relationships ========================================================
+  belongs_to :origin, class_name: 'Address'
+  belongs_to :destination, class_name: 'Address'
+
+  accepts_nested_attributes_for :origin
+  accepts_nested_attributes_for :destination
 
   # == Validations ==========================================================
-  validates :origin, presence: true
-  validates :destination, presence: true
   validates :arrival_time, presence: true
-  validates :email, presence: true
+  validates :email,
+            presence: true,
+            format: {
+              with: URI::MailTo::EMAIL_REGEXP,
+              message: I18n.t('errors.messages.not_a_valid_email')
+            }
 
   # == Scopes ===============================================================
 
   # == Callbacks ============================================================
-  after_validation :geocode, if: ->(obj) { obj.origin_changed? || obj.destination_changed? }
 
   # == Class Methods ========================================================
 
