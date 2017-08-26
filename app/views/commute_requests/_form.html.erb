@@ -1,23 +1,35 @@
 <%= simple_form_for @commute_request do |f| %>
   <%= f.simple_fields_for :origin do |o| %>
-    <div class="input-group">
-      <span class="input-group-addon" id="basic-addon1"><%= icon 'home' %></span>
-      <%= o.input :complete, label: false, placeholder: 'Ma maison' %>
-    </div>
+    <%= o.input :complete, label: false, wrapper: :vertical_input_group do %>
+      <span class="input-group-addon"><%= icon 'home' %></span>
+      <%= o.input_field :complete, placeholder: 'Ma maison', class: 'form-control' %>
+    <% end %>
   <% end %>
 
+
   <%= f.simple_fields_for :destination do |d| %>
-    <%= d.input :complete, label: false, placeholder: '🏢 Mon travail' %>
+    <%= d.input :complete, label: false, wrapper: :vertical_input_group do %>
+      <span class="input-group-addon"><%= icon 'building' %></span>
+      <%= d.input_field :complete, placeholder: 'Mon travail', class: 'form-control' %>
+    <% end %>
   <% end %>
 
   <div class="row">
     <div class="col-xs-3">
-      <%= f.input :arrival_time, label: false, prompt: '🕗 Arrivée',
-                  collection: ['07h00', '07h30', '08h00', '08h30', '09h00', '09h30'] %>
+      <%= f.input :arrival_time, label: false, wrapper: :vertical_input_group do %>
+        <span class="input-group-addon"><%= icon 'clock-o' %></span>
+        <%= f.input_field :arrival_time,
+          prompt: 'Arrivée',
+          collection: ['07h00', '07h30', '08h00', '08h30', '09h00', '09h30'],
+          class: 'form-control' %>
+      <% end %>
     </div>
 
     <div class="col-xs-9">
-      <%= f.input :email, label: false, placeholder: '📧 roger@kariol.co' %>
+      <%= f.input :email, label: false, wrapper: :vertical_input_group do %>
+        <span class="input-group-addon"><%= icon 'envelope-o' %></span>
+        <%= f.input_field :email, placeholder: 'roger@kariol.co', class: 'form-control' %>
+      <% end %>
     </div>
   </div>
 

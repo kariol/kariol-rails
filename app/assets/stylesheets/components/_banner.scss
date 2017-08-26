@@ -36,6 +36,9 @@
     }
   }
   &-form {
+    .input-group-addon {
+      color: $brand-color;
+    }
     .btn {
       width: 100%;
       padding-left: 40px;
