@@ -1,6 +1,9 @@
 <%= simple_form_for @commute_request do |f| %>
   <%= f.simple_fields_for :origin do |o| %>
-    <%= o.input :complete, label: false, placeholder: '🏠 Ma maison' %>
+    <div class="input-group">
+      <span class="input-group-addon" id="basic-addon1"><%= icon 'home' %></span>
+      <%= o.input :complete, label: false, placeholder: 'Ma maison' %>
+    </div>
   <% end %>
 
   <%= f.simple_fields_for :destination do |d| %>
@@ -14,7 +17,7 @@
     </div>
 
     <div class="col-xs-9">
-      <%= f.input :email, label: false, placeholder: '📧 jean-michel@kariol.co' %>
+      <%= f.input :email, label: false, placeholder: '📧 roger@kariol.co' %>
     </div>
   </div>
 
