@@ -20,7 +20,7 @@
         <span class="input-group-addon"><%= icon 'clock-o' %></span>
         <%= f.input_field :arrival_time,
           prompt: 'Arrivée',
-          collection: ['07h00', '07h30', '08h00', '08h30', '09h00', '09h30'],
+          collection: CommuteRequest::ARRIVAL_TIMES,
           class: 'form-control' %>
       <% end %>
     </div>
