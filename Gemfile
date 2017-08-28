@@ -41,6 +41,8 @@ gem 'gibbon'
 gem 'rails-i18n'
 gem 'raygun4ruby'
 gem 'scout_apm'
+gem 'sidekiq'
+gem 'sidekiq-failures'
 gem 'simple_form'
 
 # Custom Front

@@ -20,6 +20,14 @@ class CommuteRequest < ApplicationRecord
             }
   # == Scopes ================================================================
   # == Callbacks =============================================================
+  after_create :subscribe_to_mailchimp
   # == Class Methods =========================================================
   # == Instance Methods ======================================================
+
+  private
+
+  def subscribe_to_mailchimp
+    mailchimp_list_id = Rails.env.production? ? MAILCHIMP_LIST_ID : ENV['MAILCHIMP_LIST_ID']
+    MailchimpSubscribeJob.perform_later(email, mailchimp_list_id)
+  end
 end
