@@ -13,5 +13,8 @@ class MailchimpSubscribeJob < ApplicationJob
         # }
       }
     )
+  rescue Gibbon::MailChimpError => exception
+    return if exception.title == 'Member Exists'
+    Rails.logger.error("Gibbon::MailChimp failed: #{exception.detail}")
   end
 end
