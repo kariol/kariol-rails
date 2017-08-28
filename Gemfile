@@ -35,6 +35,7 @@ gem 'jbuilder', '~> 2.5'
 
 # Custom Back
 gem 'figaro'
+gem 'forest_liana'
 gem 'geocoder'
 gem 'rails-i18n'
 gem 'raygun4ruby'
