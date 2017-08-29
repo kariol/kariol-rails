@@ -12,7 +12,7 @@ function autocompleteCommuteRequestOrigin() {
     google.maps.event.addListener(autocomplete, 'place_changed', onPlaceChanged);
     google.maps.event.addDomListener(commute_request_origin, 'keydown', function(e) {
       if (e.keyCode == 13) {
-        e.preventDefault(); // Do not submit the form on Enter.
+        e.preventDefault();
       }
     });
   };
@@ -27,7 +27,7 @@ function autocompleteCommuteRequestDestination() {
     google.maps.event.addListener(autocomplete, 'place_changed', onPlaceChanged);
     google.maps.event.addDomListener(commute_request_destination, 'keydown', function(e) {
       if (e.keyCode == 13) {
-        e.preventDefault(); // Do not submit the form on Enter.
+        e.preventDefault();
       }
     });
   };
