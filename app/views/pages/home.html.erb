@@ -3,7 +3,9 @@
     <div class="banner-title">
       <div class="row">
         <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
-          <%= image_tag 'logo.png' %>
+          <%= link_to root_path do %>
+            <%= image_tag 'logo.png' %>
+          <% end %>
           <h1>La navette qui donne envie d'aller au travail</h1>
         </div>
       </div>
@@ -23,6 +25,15 @@
         <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
           <p>Précisez-nous votre trajet, on arrive !</p>
           <%= render 'commute_requests/form'%>
+        </div>
+      </div>
+    </div>
+
+    <div class="banner-content">
+      <div class="row">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
+          Vous êtes une entreprise ?
+          <%= link_to 'Entreprise', enterprise_path, class: 'btn btn-primary' %>
         </div>
       </div>
     </div>
