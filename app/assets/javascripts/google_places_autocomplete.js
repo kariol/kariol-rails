@@ -1,4 +1,9 @@
 document.addEventListener('turbolinks:load', function() {
+  autocompleteCommuteRequestOrigin()
+  autocompleteCommuteRequestDestination()
+});
+
+function autocompleteCommuteRequestOrigin() {
   var commute_request_origin = $('#commute_request_origin_attributes_complete').get(0);
 
   if (commute_request_origin) {
@@ -10,8 +15,10 @@ document.addEventListener('turbolinks:load', function() {
         e.preventDefault(); // Do not submit the form on Enter.
       }
     });
-  }
+  };
+};
 
+function autocompleteCommuteRequestDestination() {
   var commute_request_destination = $('#commute_request_destination_attributes_complete').get(0);
 
   if (commute_request_destination) {
@@ -23,8 +30,8 @@ document.addEventListener('turbolinks:load', function() {
         e.preventDefault(); // Do not submit the form on Enter.
       }
     });
-  }
-});
+  };
+};
 
 function onPlaceChanged() {
   var place = this.getPlace();
@@ -37,4 +44,4 @@ function onPlaceChanged() {
       }
     }
   }
-}
+};

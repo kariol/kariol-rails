@@ -1,4 +1,4 @@
-<%= simple_form_for @commute_request do |f| %>
+<%= simple_form_for @commute_request, remote: true do |f| %>
   <%= f.simple_fields_for :origin do |o| %>
     <%= o.input :complete, label: false, wrapper: :vertical_input_group do %>
       <span class="input-group-addon"><%= icon 'home' %></span>
