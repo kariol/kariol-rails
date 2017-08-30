@@ -9,7 +9,7 @@ class BusinessRequest < ApplicationRecord
     'plus de 1000 employés'
   ].freeze
   MAILCHIMP_LIST_ID = 'b95371daa8'.freeze
-  PHONE_REGEX = /\A(\+\d+)?([\s\-\.]?\(?\d+\)?)+\z/.freeze
+  PHONE_REGEXP = /\A(\+\d+)?([\s\-\.]?\(?\d+\)?)+\z/
   # == Attributes ============================================================
   # == Extensions ============================================================
   # == Relationships =========================================================

@@ -3,7 +3,9 @@ class PagesController < ApplicationController
     @commute_request = CommuteRequest.new(origin: Address.new, destination: Address.new)
   end
 
-  def enterprise; end
+  def enterprise
+    @business_request = BusinessRequest.new(address: Address.new)
+  end
 
   def legal; end
 end

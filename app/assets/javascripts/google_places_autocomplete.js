@@ -1,6 +1,7 @@
 document.addEventListener('turbolinks:load', function() {
   autocompleteCommuteRequestOrigin()
   autocompleteCommuteRequestDestination()
+  autocompleteBusinessRequestAddress();
 });
 
 function autocompleteCommuteRequestOrigin() {
@@ -26,6 +27,21 @@ function autocompleteCommuteRequestDestination() {
       componentRestrictions: {country: 'fr'} });
     google.maps.event.addListener(autocomplete, 'place_changed', onPlaceChanged);
     google.maps.event.addDomListener(commute_request_destination, 'keydown', function(e) {
+      if (e.keyCode == 13) {
+        e.preventDefault();
+      }
+    });
+  };
+};
+
+function autocompleteBusinessRequestAddress() {
+  var business_request_address = $('#business_request_address_attributes_complete').get(0);
+
+  if (business_request_address) {
+    var autocomplete = new google.maps.places.Autocomplete(business_request_address, {
+      componentRestrictions: {country: 'fr'} });
+    google.maps.event.addListener(autocomplete, 'place_changed', onPlaceChanged);
+    google.maps.event.addDomListener(business_request_address, 'keydown', function(e) {
       if (e.keyCode == 13) {
         e.preventDefault();
       }

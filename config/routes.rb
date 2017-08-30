@@ -10,5 +10,6 @@ Rails.application.routes.draw do
   get 'entreprise', to: 'pages#enterprise', as: :enterprise
   get 'legal', to: 'pages#legal'
 
+  resources :business_requests, only: [ :create ]
   resources :commute_requests, only: [ :create ]
 end

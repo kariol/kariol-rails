@@ -1,0 +1,7 @@
+<% if @business_request.errors.any? %>
+  $('#new_business_request').html("<%= j render 'form' %>");
+  autocompleteBusinessRequestAddress();
+<% else %>
+  $('#new_business_request').html("<%= j render 'form' %>");
+  autocompleteBusinessRequestAddress();
+<% end %>
