@@ -2,3 +2,4 @@ en:
   errors:
     messages:
       not_a_valid_email: must be a valid email
+      not_a_valid_phone: must be a valid phone number

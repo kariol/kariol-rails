@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170825180101) do
+ActiveRecord::Schema.define(version: 20170830052445) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,6 +21,20 @@ ActiveRecord::Schema.define(version: 20170825180101) do
     t.float "longitude"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "business_requests", force: :cascade do |t|
+    t.string "first_name"
+    t.string "last_name"
+    t.string "email"
+    t.string "phone"
+    t.string "company"
+    t.string "employee_range"
+    t.bigint "address_id"
+    t.text "message"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["address_id"], name: "index_business_requests_on_address_id"
   end
 
   create_table "commute_requests", force: :cascade do |t|
@@ -34,6 +48,7 @@ ActiveRecord::Schema.define(version: 20170825180101) do
     t.index ["origin_id"], name: "index_commute_requests_on_origin_id"
   end
 
+  add_foreign_key "business_requests", "addresses"
   add_foreign_key "commute_requests", "addresses", column: "destination_id"
   add_foreign_key "commute_requests", "addresses", column: "origin_id"
 end

@@ -1,23 +1,39 @@
-class CommuteRequest < ApplicationRecord
+class BusinessRequest < ApplicationRecord
   # == Constants =============================================================
-  ARRIVAL_TIMES = %w[07h00 07h30 08h00 08h30 09h00 09h30].freeze
-  MAILCHIMP_LIST_ID = '220c70f97c'.freeze
+  EMPLOYEE_RANGES = [
+    '1 à 10 employés',
+    '10 à 50 employés',
+    '50 à 200 employés',
+    '200 à 500 employés',
+    '500 à 1000 employés',
+    'plus de 1000 employés'
+  ].freeze
+  MAILCHIMP_LIST_ID = 'b95371daa8'.freeze
+  PHONE_REGEX = /\A(\+\d+)?([\s\-\.]?\(?\d+\)?)+\z/.freeze
   # == Attributes ============================================================
   # == Extensions ============================================================
   # == Relationships =========================================================
-  belongs_to :origin, class_name: 'Address'
-  belongs_to :destination, class_name: 'Address'
+  belongs_to :address
 
-  accepts_nested_attributes_for :origin
-  accepts_nested_attributes_for :destination
+  accepts_nested_attributes_for :address
   # == Validations ===========================================================
-  validates :arrival_time, presence: true, inclusion: { in: ARRIVAL_TIMES }
+  validates :first_name, presence: true
+  validates :last_name, presence: true
   validates :email,
             presence: true,
             format: {
               with: URI::MailTo::EMAIL_REGEXP,
               message: I18n.t('errors.messages.not_a_valid_email')
             }
+  validates :phone,
+            presence: true,
+            format: {
+              with: PHONE_REGEXP,
+              message: I18n.t('errors.messages.not_a_valid_phone')
+            }
+  validates :company, presence: true
+  validates :employee_range, presence: true, inclusion: { in: EMPLOYEE_RANGES }
+  validates :message, presence: true
   # == Scopes ================================================================
   # == Callbacks =============================================================
   after_create :subscribe_to_mailchimp
