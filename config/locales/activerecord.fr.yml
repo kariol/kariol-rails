@@ -1,0 +1,13 @@
+fr:
+  activerecord:
+    models:
+      address: Adresse
+    attributes:
+      address:
+        complete: Adresse complète
+      business_request:
+        first_name: Prénom
+        last_name: Nom
+        phone: Téléphone
+        company: Entreprise
+        employee_range: Nombre d'employés
