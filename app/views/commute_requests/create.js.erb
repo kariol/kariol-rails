@@ -1,9 +1,9 @@
 <% if @commute_request.errors.any? %>
-  $('#new_commute_request').html("<%= j render 'form' %>");
+  $('.new-commute-request').html("<%= j render 'form' %>");
   autocompleteCommuteRequestOrigin();
   autocompleteCommuteRequestDestination();
 <% else %>
-  $('#new_commute_request').html("<%= j render 'form' %>");
+  $('.new-commute-request').html("<%= j render 'form' %>");
   autocompleteCommuteRequestOrigin();
   autocompleteCommuteRequestDestination();
 <% end %>
