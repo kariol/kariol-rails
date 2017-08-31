@@ -11,7 +11,7 @@ class CommuteRequest < ApplicationRecord
   accepts_nested_attributes_for :origin
   accepts_nested_attributes_for :destination
   # == Validations ===========================================================
-  validates :arrival_time, presence: true, inclusion: { in: ARRIVAL_TIMES }
+  validates :arrival_time_string, presence: true, inclusion: { in: ARRIVAL_TIMES }
   validates :email,
             presence: true,
             format: {
@@ -20,11 +20,16 @@ class CommuteRequest < ApplicationRecord
             }
   # == Scopes ================================================================
   # == Callbacks =============================================================
+  before_save :update_arrival_time
   after_create :subscribe_to_mailchimp
   # == Class Methods =========================================================
   # == Instance Methods ======================================================
 
   private
+
+  def update_arrival_time
+    self.arrival_time = arrival_time_string
+  end
 
   def subscribe_to_mailchimp
     mailchimp_list_id = Rails.env.production? ? MAILCHIMP_LIST_ID : ENV['MAILCHIMP_LIST_ID']

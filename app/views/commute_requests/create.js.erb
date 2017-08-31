@@ -1,9 +1,10 @@
 <% if @commute_request.errors.any? %>
   $('.new-commute-request').html("<%= j render 'form' %>");
-  autocompleteCommuteRequestOrigin();
-  autocompleteCommuteRequestDestination();
 <% else %>
+  $('#commute-request-modal').modal('hide')
   $('.new-commute-request').html("<%= j render 'form' %>");
-  autocompleteCommuteRequestOrigin();
-  autocompleteCommuteRequestDestination();
 <% end %>
+autocomplete($('.banner-form #commute_request_origin_attributes_complete'));
+autocomplete($('.modal #commute_request_origin_attributes_complete'));
+autocomplete($('.banner-form #commute_request_destination_attributes_complete'));
+autocomplete($('.modal #commute_request_destination_attributes_complete'));

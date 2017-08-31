@@ -15,9 +15,9 @@
 
   <div class="row">
     <div class="col-xs-12 col-md-3">
-      <%= f.input :arrival_time, label: false, wrapper: :vertical_input_group do %>
+      <%= f.input :arrival_time_string, label: false, wrapper: :vertical_input_group do %>
         <span class="input-group-addon"><%= icon 'clock-o' %></span>
-        <%= f.input_field :arrival_time,
+        <%= f.input_field :arrival_time_string,
           prompt: 'Arrivée',
           collection: CommuteRequest::ARRIVAL_TIMES,
           class: 'form-control' %>

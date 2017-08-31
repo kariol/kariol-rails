@@ -17,7 +17,7 @@ class CommuteRequestsController < ApplicationController
 
   def commute_request_params
     params.require(:commute_request).permit(
-      :arrival_time, :email,
+      :arrival_time_string, :email,
       origin_attributes: [:complete],
       destination_attributes: [:complete]
     )

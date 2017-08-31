@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170830052445) do
+ActiveRecord::Schema.define(version: 20170831222436) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -44,6 +44,7 @@ ActiveRecord::Schema.define(version: 20170830052445) do
     t.datetime "updated_at", null: false
     t.bigint "origin_id"
     t.bigint "destination_id"
+    t.string "arrival_time_string"
     t.index ["destination_id"], name: "index_commute_requests_on_destination_id"
     t.index ["origin_id"], name: "index_commute_requests_on_origin_id"
   end
