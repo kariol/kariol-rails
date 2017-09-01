@@ -15,18 +15,20 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 50px;
   color: rgba(0,0,0,0.3);
-}
-.footer-links {
-  display: flex;
-  align-items: center;
-}
-.footer-links a {
-  color: rgba(0,0,0,0.3);
-  text-decoration: none;
-  padding: 0px 10px;
-}
-.footer-links a:hover {
-  color: $brand-color;
+  &-links {
+    display: flex;
+    align-items: center;
+    a {
+      color: rgba(0,0,0,0.3);
+      text-decoration: none;
+      margin: 0 10px;
+      &:hover {
+        color: $brand-color;
+      }
+    }
+  }
+  &-right {
+    margin: 0 10px;
+  }
 }

@@ -9,25 +9,36 @@
   align-items: stretch;
   justify-content: center;
   &-container {
+    width: 100%;
     padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+  &-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    img {
+      height: 70px;
+    }
+  }
+  &-content {
+    flex: 1 0 auto;
     display: flex;
     flex-direction: column;
     align-items: stretch;
     justify-content: space-around;
   }
-  &-title {
+  &-headline {
     text-align: center;
-    img {
-      width: 200px;
-    }
     h1 {
       text-transform: uppercase;
-      font-size: 20px;
-      font-weight: bold;
       color: $brand-color
     }
   }
-  &-content {
+  &-description {
     p {
       text-align: justify;
       text-transform: uppercase;
@@ -36,6 +47,7 @@
     }
   }
   &-form {
+    text-align: left;
     .input-group-addon {
       color: $brand-color;
     }

@@ -1,41 +1,29 @@
 <div class="banner" style="background-image: linear-gradient(rgba(54, 66, 112, 0.9), rgba(115, 188, 149, 0.8)), url(<%= image_path 'banner.jpg' %>);">
   <div class="banner-container">
-    <div class="banner-title">
-      <div class="row">
-        <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
-          <%= link_to root_path do %>
-            <%= image_tag 'logo.png' %>
-          <% end %>
-          <h1>La navette qui donne envie d'aller au travail</h1>
-        </div>
-      </div>
+    <div class="banner-top">
+      <%= link_to root_path do %>
+        <%= image_tag 'logo.png' %>
+      <% end %>
+      <%= link_to 'Entreprise', enterprise_path, class: 'btn btn-primary' %>
     </div>
-
     <div class="banner-content">
-      <div class="row">
-        <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
-          <p><strong>Vous êtes une entreprise</strong> et êtes intéressée par notre service pour vos employés ?</p>
-          <p><strong>Vous êtes un particulier</strong> et cherchez une alternative à l'utilisation de votre voiture individuelle ?</p>
-        </div>
+      <div class="banner-headline">
+        <h1>Laissez-vous transporter</h1>
       </div>
-    </div>
 
-    <div class="banner-form">
       <div class="row">
-        <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
-          <p>Précisez-nous votre trajet, Kariol arrive !</p>
-          <div class="new-commute-request">
-            <%= render 'commute_requests/form' %>
+        <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-6">
+          <div class="banner-description">
+            <p><strong>Vous êtes une entreprise</strong> et êtes intéressée par notre service pour vos employés ?</p>
+            <p><strong>Vous êtes un particulier</strong> et cherchez une alternative à l'utilisation de votre voiture individuelle ?</p>
           </div>
-        </div>
-      </div>
-    </div>
 
-    <div class="banner-content">
-      <div class="row">
-        <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
-          Vous êtes une entreprise ?
-          <%= link_to 'Entreprise', enterprise_path, class: 'btn btn-primary' %>
+          <div class="banner-form">
+            <p>Précisez-nous votre trajet, Kariol arrive !</p>
+            <div class="new-commute-request">
+              <%= render 'commute_requests/form' %>
+            </div>
+          </div>
         </div>
       </div>
     </div>
