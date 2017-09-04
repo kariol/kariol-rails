@@ -45,5 +45,6 @@
     <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?libraries=places&key=#{ENV['GOOGLE_API_BROWSER_KEY']}", 'data-turbolinks-eval': 'false' %>
 
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload', 'data-turbolinks-eval': 'false' %>
+    <%= yield :js %>
   </body>
 </html>

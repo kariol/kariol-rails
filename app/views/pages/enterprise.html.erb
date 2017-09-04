@@ -1,4 +1,4 @@
-<div class="banner" style="background-image: linear-gradient(rgba(54, 66, 112, 0.9), rgba(115, 188, 149, 0.8)), url(<%= image_path 'banner.jpg' %>);">
+<div class="banner" style="background-image: linear-gradient(rgba(54, 66, 112, 0.7), rgba(115, 188, 149, 0.4)), url('http://www.naturalnews.com/gallery/640/Children/Friends-Bus-Transportation-Talking.jpg');">
   <div class="banner-container">
     <div class="banner-top">
       <%= link_to root_path do %>
@@ -26,6 +26,63 @@
     </div>
   </div>
 </div>
+
+<div class="container">
+  <div class="panel panel-default">
+    <div class="panel-heading">Benefits</div>
+    <div class="panel-body">
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#business-request-modal">
+        Demander une simulation
+      </button>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">Description</div>
+    <div class="panel-body">
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#business-request-modal">
+        Demander une simulation
+      </button>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">Numbers</div>
+    <div class="panel-body">
+      <div id="num"></div>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#business-request-modal">
+        Demander une simulation
+      </button>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">Team</div>
+    <div class="panel-body">
+    </div>
+  </div>
+</div>
+
+<%= content_for :js do %>
+  <script type="text/javascript">
+    var numAnim = new CountUp("num", 24.02, 99.99);
+    if (!numAnim.error) {
+    } else {
+      console.error(numAnim.error);
+    };
+    $("#num").inViewport(function(px) {
+      console.log( px ); // `px` represents the amount of visible height
+      if(px>50 && !this.initNumAnim) {
+        this.initNumAnim = true; // Set flag to true to prevent re-running the same animation
+        // <<< DO SOME COOL STUFF HERE!
+        numAnim.start();
+    // do this if element enters the viewport // px > 0
+      }else{
+        // do that if element exits  the viewport // px = 0
+      }
+    }); // Here you can chain other jQuery methods to your selector
+  </script>
+<% end %>
 
 <!-- Modal -->
 <div class="modal fade" id="business-request-modal" tabindex="-1" role="dialog" aria-labelledby="business-request-modal-label">
