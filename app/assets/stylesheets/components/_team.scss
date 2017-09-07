@@ -1,3 +1,21 @@
 .team {
-  
+  background-color: light-gray;
+  padding-bottom: 50px;
+  text-align: center;
+  color: $brand-color-text;
+  &-title {
+    padding: 50px 0;
+    text-align: center;
+    h2 {
+      margin-top: 0;
+      text-transform: uppercase;
+    }
+  }
+  &-member {
+    text-align: center;
+    img {
+      height: 150px;
+      border-radius: 100%;
+    }
+  }
 }
