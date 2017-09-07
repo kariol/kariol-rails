@@ -1,0 +1,18 @@
+.cta {
+  color: $brand-color-text;
+  text-align: center;
+  background-size: cover !important;
+  background-position: left center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &-form {
+    text-align: left;
+    .input-group-addon {
+      color: $brand-color-second;
+    }
+    .btn {
+      text-transform: uppercase;
+    }
+  }
+}

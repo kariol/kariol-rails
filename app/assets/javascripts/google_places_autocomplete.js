@@ -1,9 +1,9 @@
 document.addEventListener('turbolinks:load', function() {
   autocomplete($('.banner-form #commute_request_origin_attributes_complete'));
-  autocomplete($('.modal #commute_request_origin_attributes_complete'));
+  autocomplete($('.cta-form #commute_request_origin_attributes_complete'));
   autocomplete($('.banner-form #commute_request_destination_attributes_complete'));
-  autocomplete($('.modal #commute_request_destination_attributes_complete'));
-  
+  autocomplete($('.cta-form #commute_request_destination_attributes_complete'));
+
   autocomplete($('#business_request_address_attributes_complete'));
 });
 

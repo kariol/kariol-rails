@@ -1,23 +1,120 @@
-<div class="banner" style="background-image: linear-gradient(rgba(54, 66, 112, 0.9), rgba(115, 188, 149, 0.8)), url(<%= image_path 'banner.jpg' %>);">
+<div class="banner" style="background-image: linear-gradient(170deg, rgba(244, 244, 244, 0.5), rgba(244, 244, 244, 0.5) 50%, rgba(238, 133, 108, 0.5)), url('');">
   <div class="banner-container">
     <div class="banner-top">
       <%= link_to root_path do %>
         <%= image_tag 'logo.png' %>
       <% end %>
-      <%= link_to 'Entreprise', enterprise_path, class: 'btn btn-primary' %>
+      <%= link_to 'Entreprise', enterprise_path, class: 'btn btn-info' %>
     </div>
     <div class="banner-content">
       <div class="banner-headline">
         <h1>Laissez-vous transporter</h1>
+        <p><strong>Lorem ipsum</strong> dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       </div>
 
       <div class="row">
         <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-6">
-          <div class="banner-description">
-            <p><strong>Lorem ipsum</strong> dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          </div>
-
           <div class="banner-form">
+            <p>Précisez-nous votre trajet, Kariol arrive !</p>
+            <div class="new-commute-request">
+              <%= render 'commute_requests/form' %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="benefits">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0">
+        <div class="benefit">
+          <%= image_tag 'favicon.png' %>
+          <h3>Qualité de vie</h3>
+          <p>Moins de stress lié à la conduite où aux problèmes des transports en commun</p>
+        </div>
+      </div>
+
+      <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0">
+        <div class="benefit">
+          <%= image_tag 'favicon.png' %>
+          <h3>Qualité de vie</h3>
+          <p>Moins de stress lié à la conduite où aux problèmes des transports en commun</p>
+        </div>
+      </div>
+
+      <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0">
+        <div class="benefit">
+          <%= image_tag 'favicon.png' %>
+          <h3>Qualité de vie</h3>
+          <p>Moins de stress lié à la conduite où aux problèmes des transports en commun</p>
+        </div>
+      </div>
+
+      <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0">
+        <div class="benefit">
+          <%= image_tag 'favicon.png' %>
+          <h3>Qualité de vie</h3>
+          <p>Moins de stress lié à la conduite où aux problèmes des transports en commun</p>
+        </div>
+      </div>
+
+      <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0">
+        <div class="benefit">
+          <%= image_tag 'favicon.png' %>
+          <h3>Qualité de vie</h3>
+          <p>Moins de stress lié à la conduite où aux problèmes des transports en commun</p>
+        </div>
+      </div>
+
+      <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0">
+        <div class="benefit">
+          <%= image_tag 'favicon.png' %>
+          <h3>Qualité de vie</h3>
+          <p>Moins de stress lié à la conduite où aux problèmes des transports en commun</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="explanations">
+  <div class="container">
+    <h2>Kariol, comment ça marche ?</h2>
+    <div class="explanation">
+      <div class="row">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0">
+          <%= image_tag 'banner.jpg' %>
+        </div>
+        <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0">
+          <h3>Des minibus confortables</h3>
+          <p>Capacité de 9 à 14 personnes, des équipements utiles : chargeurs USB, Wifi..., des équipements à la demande : rack vélo...</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="explanation">
+      <div class="row">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-push-6 col-sm-offset-0">
+          <%= image_tag 'banner.jpg' %>
+        </div>
+        <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-pull-6 col-sm-offset-0">
+          <h3>Des minibus confortables</h3>
+          <p>Capacité de 9 à 14 personnes, des équipements utiles : chargeurs USB, Wifi..., des équipements à la demande : rack vélo...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="cta" style="background-image: linear-gradient(rgba(215, 224, 221, 0.5), rgba(215, 224, 221, 0.5) 40%, rgba(238, 133, 108, 0.5)), url('');">
+  <div class="banner-container">
+    <div class="banner-content">
+      <div class="row">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3">
+          <div class="cta-form">
             <p>Précisez-nous votre trajet, Kariol arrive !</p>
             <div class="new-commute-request">
               <%= render 'commute_requests/form' %>
@@ -31,47 +128,8 @@
 
 <div class="container">
   <div class="panel panel-default">
-    <div class="panel-heading">Benefits</div>
-    <div class="panel-body">
-    </div>
-  </div>
-
-  <div class="panel panel-default">
-    <div class="panel-heading">How it works</div>
-    <div class="panel-body">
-    </div>
-  </div>
-
-  <div class="panel panel-default">
-    <div class="panel-heading">Call to action</div>
-    <div class="panel-body">
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#commute-request-modal">
-        Je veux embarquer
-      </button>
-    </div>
-  </div>
-
-  <div class="panel panel-default">
     <div class="panel-heading">Team</div>
     <div class="panel-body">
-    </div>
-  </div>
-</div>
-
-<!-- Modal -->
-<div class="modal fade" id="commute-request-modal" tabindex="-1" role="dialog" aria-labelledby="commute-request-modal-label">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="commute-request-modal-label">Carte d'embarquement</h4>
-      </div>
-
-      <div class="modal-body">
-        <div class="new-commute-request">
-          <%= render 'commute_requests/form' %>
-        </div>
-      </div>
     </div>
   </div>
 </div>

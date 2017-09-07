@@ -72,7 +72,7 @@
     };
     $("#num").inViewport(function(px) {
       console.log( px ); // `px` represents the amount of visible height
-      if(px>50 && !this.initNumAnim) {
+      if(px>20 && !this.initNumAnim) {
         this.initNumAnim = true; // Set flag to true to prevent re-running the same animation
         // <<< DO SOME COOL STUFF HERE!
         numAnim.start();
