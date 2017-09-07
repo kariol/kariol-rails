@@ -6,14 +6,21 @@
     <% end %>
   <% end %>
 
-  <%= f.simple_fields_for :destination do |d| %>
-    <%= d.input :complete, label: false, wrapper: :vertical_input_group do %>
-      <span class="input-group-addon"><%= icon 'building' %></span>
-      <%= d.input_field :complete, placeholder: 'Travail', class: 'form-control' %>
-    <% end %>
-  <% end %>
+  <div class="row gutter-3">
+    <div class="col-xs-12 col-md-5">
+        <%= f.input :company, label: false, wrapper: :vertical_input_group do %>
+          <span class="input-group-addon"><%= icon 'building' %></span>
+          <%= f.input_field :company, placeholder: 'Entreprise', class: 'form-control' %>
+        <% end %>
+    </div>
+    <div class="col-xs-12 col-md-7">
+      <%= f.simple_fields_for :destination do |d| %>
+        <%= d.input :complete, label: false, placeholder: 'Adresse' %>
+      <% end %>
+    </div>
+  </div>
 
-  <div class="row">
+  <div class="row gutter-3">
     <div class="col-xs-12 col-md-5">
       <%= f.input :arrival_time_string, label: false, wrapper: :vertical_input_group do %>
         <span class="input-group-addon"><%= icon 'clock-o' %></span>

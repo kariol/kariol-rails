@@ -20,13 +20,26 @@ $border-radius-small: 4px;
 // Other variables
 $input-border-focus: $brand-primary;
 
-.row.no-gutter {
+// Gutter 0
+.row.gutter-0 {
   margin-left: 0;
   margin-right: 0;
 }
 
-.row.no-gutter [class*='col-']:not(:first-child),
-.row.no-gutter [class*='col-']:not(:last-child) {
+.row.gutter-0 [class*='col-']:not(:first-child),
+.row.gutter-0 [class*='col-']:not(:last-child) {
   padding-right: 0;
   padding-left: 0;
+}
+
+// Gutter 3
+.row.gutter-3 {
+  margin-left: -3px;
+  margin-right: -3px;
+}
+
+.row.gutter-3 [class*='col-']:not(:first-child),
+.row.gutter-3 [class*='col-']:not(:last-child) {
+  padding-right: 3px;
+  padding-left: 3px;
 }
