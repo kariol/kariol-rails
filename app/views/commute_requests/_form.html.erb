@@ -2,14 +2,14 @@
   <%= f.simple_fields_for :origin do |o| %>
     <%= o.input :complete, label: false, wrapper: :vertical_input_group do %>
       <span class="input-group-addon"><%= icon 'home' %></span>
-      <%= o.input_field :complete, placeholder: 'Mon domicile', class: 'form-control' %>
+      <%= o.input_field :complete, placeholder: 'Domicile', class: 'form-control' %>
     <% end %>
   <% end %>
 
   <%= f.simple_fields_for :destination do |d| %>
     <%= d.input :complete, label: false, wrapper: :vertical_input_group do %>
       <span class="input-group-addon"><%= icon 'building' %></span>
-      <%= d.input_field :complete, placeholder: 'Mon travail', class: 'form-control' %>
+      <%= d.input_field :complete, placeholder: 'Travail', class: 'form-control' %>
     <% end %>
   <% end %>
 
@@ -18,7 +18,7 @@
       <%= f.input :arrival_time_string, label: false, wrapper: :vertical_input_group do %>
         <span class="input-group-addon"><%= icon 'clock-o' %></span>
         <%= f.input_field :arrival_time_string,
-          prompt: 'Arrivée',
+          prompt: "Heure d'arrivée",
           collection: CommuteRequest::ARRIVAL_TIMES,
           class: 'form-control' %>
       <% end %>
@@ -32,7 +32,7 @@
     </div>
   </div>
 
-  <div class="text-right">
+  <div>
     <%= f.submit "J'embarque", class: 'btn btn-primary' %>
   </div>
 <% end %>

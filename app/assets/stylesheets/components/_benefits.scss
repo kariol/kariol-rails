@@ -1,7 +1,13 @@
 .benefits {
-  background-color: #D7E0DD;
+  background-color: light-gray;
   padding: 50px 0;
+  text-align: center;
   color: $brand-color-text;
+  h2 {
+    margin-top: 0;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+  }
 }
 .benefit {
   text-align: center;

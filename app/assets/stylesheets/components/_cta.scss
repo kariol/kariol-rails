@@ -1,18 +1,23 @@
 .cta {
-  color: $brand-color-text;
+  background-color: $brand-color;
+  padding: 50px 0;
   text-align: center;
-  background-size: cover !important;
-  background-position: left center;
+  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
+  h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
   &-form {
-    text-align: left;
     .input-group-addon {
       color: $brand-color-second;
     }
     .btn {
-      text-transform: uppercase;
+      padding-left: 30px;
+      padding-right: 30px;
     }
   }
 }

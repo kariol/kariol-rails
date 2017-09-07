@@ -1,10 +1,10 @@
-<div class="banner" style="background-image: linear-gradient(170deg, rgba(244, 244, 244, 0.5), rgba(244, 244, 244, 0.5) 50%, rgba(238, 133, 108, 0.5)), url('');">
+<div class="banner" style="background-image: linear-gradient(170deg, rgba(232, 238, 236, 1), rgba(232, 238, 236, 1)), url('');">
   <div class="banner-container">
     <div class="banner-top">
       <%= link_to root_path do %>
         <%= image_tag 'logo.png' %>
       <% end %>
-      <%= link_to 'Entreprise', enterprise_path, class: 'btn btn-info' %>
+      <%= link_to 'Entreprise, embarquez ici', enterprise_path, class: 'btn btn-info' %>
     </div>
     <div class="banner-content">
       <div class="banner-headline">
@@ -27,6 +27,7 @@
 </div>
 
 <div class="benefits">
+  <h2>Valorisez votre trajet domicile travail</h2>
   <div class="container">
     <div class="row">
       <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0">
@@ -81,10 +82,14 @@
 </div>
 
 <div class="explanations">
+  <div class="explanations-title">
+    <div class="container">
+      <h2>Privilégiez votre qualité de vie en réinventant votre quotidien, comment ça marche ?</h2>
+    </div>
+  </div>
   <div class="container">
-    <h2>Kariol, comment ça marche ?</h2>
     <div class="explanation">
-      <div class="row">
+      <div class="row no-gutter">
         <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0">
           <%= image_tag 'banner.jpg' %>
         </div>
@@ -96,7 +101,7 @@
     </div>
 
     <div class="explanation">
-      <div class="row">
+      <div class="row no-gutter">
         <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-push-6 col-sm-offset-0">
           <%= image_tag 'banner.jpg' %>
         </div>
@@ -109,13 +114,12 @@
   </div>
 </div>
 
-<div class="cta" style="background-image: linear-gradient(rgba(215, 224, 221, 0.5), rgba(215, 224, 221, 0.5) 40%, rgba(238, 133, 108, 0.5)), url('');">
-  <div class="banner-container">
-    <div class="banner-content">
+<div class="cta">
+    <div class="container">
       <div class="row">
+        <h2>Précisez-nous votre trajet, Kariol arrive !</h2>
         <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3">
           <div class="cta-form">
-            <p>Précisez-nous votre trajet, Kariol arrive !</p>
             <div class="new-commute-request">
               <%= render 'commute_requests/form' %>
             </div>
@@ -123,9 +127,11 @@
         </div>
       </div>
     </div>
-  </div>
 </div>
 
+<div class="team">
+
+</div>
 <div class="container">
   <div class="panel panel-default">
     <div class="panel-heading">Team</div>
