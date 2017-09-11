@@ -8,16 +8,19 @@ $font-size-base: 18px;
 $gray-base:       $gray;
 $brand-primary:   $brand-color-text;
 $brand-success:   $brand-color-second;
-$brand-info:      $brand-color;
+$brand-info:      $light-green;
 $brand-danger:    $red;
 $brand-warning:   $orange;
 
-// Buttons & inputs' radius
+// Radius (buttons & inputs)
 $border-radius-base:  6px;
 $border-radius-large: 8px;
 $border-radius-small: 4px;
 
-// Other variables
+// Buttons
+$btn-info-color: $brand-color-text;
+
+// Inputs
 $input-border-focus: $brand-primary;
 
 // Gutter 0
@@ -25,7 +28,6 @@ $input-border-focus: $brand-primary;
   margin-left: 0;
   margin-right: 0;
 }
-
 .row.gutter-0 [class*='col-']:not(:first-child),
 .row.gutter-0 [class*='col-']:not(:last-child) {
   padding-right: 0;
@@ -37,7 +39,6 @@ $input-border-focus: $brand-primary;
   margin-left: -3px;
   margin-right: -3px;
 }
-
 .row.gutter-3 [class*='col-']:not(:first-child),
 .row.gutter-3 [class*='col-']:not(:last-child) {
   padding-right: 3px;

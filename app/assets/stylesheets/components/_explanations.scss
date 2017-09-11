@@ -1,17 +1,9 @@
 .explanations {
-  background-color: $light-gray;
   color: $brand-color-text;
-  &-title {
-    background-color: $light-green;
-    padding: 50px 0;
-    text-align: center;
-    color: $brand-color;
-    h2 {
-      margin: 0;
-      text-transform: uppercase;
-    }
-  }
   img {
     width: 100%;
+  }
+  .explanation-content {
+    padding: 15px;
   }
 }

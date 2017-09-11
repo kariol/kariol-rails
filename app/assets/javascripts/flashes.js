@@ -1,8 +1,8 @@
 document.addEventListener('turbolinks:load', function() {
-  var alert_info = $('.alert-info');
-  if (alert_info) {
+  const flashNotice = $('#flashNotice');
+  if (flashNotice.length) {
     setTimeout(function(){
-      alert_info.alert('close');
+      flashNotice.alert('close');
     }, 6000);
   };
 });

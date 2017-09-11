@@ -1,15 +1,13 @@
 document.addEventListener('turbolinks:load', function() {
-  autocomplete($('.banner-form #commute_request_origin_attributes_complete'));
-  autocomplete($('.cta-form #commute_request_origin_attributes_complete'));
-  autocomplete($('.banner-form #commute_request_destination_attributes_complete'));
-  autocomplete($('.cta-form #commute_request_destination_attributes_complete'));
+  autocomplete(document.querySelector('.banner-form #commute_request_origin_attributes_complete'));
+  autocomplete(document.querySelector('.cta-form #commute_request_origin_attributes_complete'));
+  autocomplete(document.querySelector('.banner-form #commute_request_destination_attributes_complete'));
+  autocomplete(document.querySelector('.cta-form #commute_request_destination_attributes_complete'));
 
-  autocomplete($('#business_request_address_attributes_complete'));
+  autocomplete(document.querySelector('#business_request_address_attributes_complete'));
 });
 
-function autocomplete(element) {
-  var addressInput = element.get(0);
-
+function autocomplete(addressInput) {
   if (addressInput) {
     var autocomplete = new google.maps.places.Autocomplete(addressInput, {
       componentRestrictions: {country: 'fr'} });

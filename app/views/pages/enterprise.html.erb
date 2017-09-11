@@ -70,17 +70,7 @@
     } else {
       console.error(numAnim.error);
     };
-    $("#num").inViewport(function(px) {
-      console.log( px ); // `px` represents the amount of visible height
-      if(px>20 && !this.initNumAnim) {
-        this.initNumAnim = true; // Set flag to true to prevent re-running the same animation
-        // <<< DO SOME COOL STUFF HERE!
-        numAnim.start();
-    // do this if element enters the viewport // px > 0
-      }else{
-        // do that if element exits  the viewport // px = 0
-      }
-    }); // Here you can chain other jQuery methods to your selector
+    numAnim.start();
   </script>
 <% end %>
 
