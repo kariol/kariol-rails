@@ -3,7 +3,17 @@
   img {
     width: 100%;
   }
-  .explanation-content {
-    padding: 15px;
+  .explanation {
+    &-content {
+      padding: 15px;
+      text-align: center;
+      img {
+        width: auto;
+        height: 60px;
+      }
+      p, li {
+        text-align: left;
+      }
+    }
   }
 }

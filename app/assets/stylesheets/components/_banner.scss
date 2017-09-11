@@ -23,11 +23,15 @@
       img {
         height: 60px;
       }
+      div img {
+        height: 36px;
+        margin-right: 10px;
+      }
     }
   }
   &-content {
     background-size: cover !important;
-    background-position: left center;
+    background-position: left bottom;
     padding-bottom: 25px;
     flex: 1 0 auto;
     display: flex;
@@ -51,7 +55,8 @@
       color: $brand-color-second;
     }
     .btn {
-      text-transform: uppercase;
+      padding-left: 30px;
+      padding-right: 30px;
     }
   }
 }

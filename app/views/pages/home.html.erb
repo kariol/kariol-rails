@@ -6,14 +6,17 @@
           <%= link_to root_path do %>
             <%= image_tag 'logo.png' %>
           <% end %>
-          <div>
-            <%= image_tag 'favicon.png' %>
+          <div class="hidden-xs">
+            <%= image_tag 'blue_van_icon.png' %>
             <%= link_to 'Entreprise, embarquez ici', enterprise_path, class: 'btn btn-info' %>
+          </div>
+          <div class="visible-xs">
+            <%= link_to 'Entreprise', enterprise_path, class: 'btn btn-info' %>
           </div>
         </div>
       </div>
     </div>
-    <div class="banner-content" style="background-image: url('<%= image_path 'logo.png' %>');">
+    <div class="banner-content" style="background-image: url('<%= image_path 'banner.png' %>');">
       <div class="banner-headline">
         <div class="container">
           <div class="row">
@@ -52,7 +55,7 @@
     <div class="row">
       <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0">
         <div class="benefit">
-          <%= image_tag 'favicon.png' %>
+          <%= image_tag 'quality_of_life.png' %>
           <h3>Qualité de vie</h3>
           <p>Libérez-vous du stress lié à la conduite, ou des contraintes des transports en commun</p>
         </div>
@@ -60,7 +63,7 @@
 
       <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0">
         <div class="benefit">
-          <%= image_tag 'favicon.png' %>
+          <%= image_tag 'confort.png' %>
           <h3>Confort</h3>
           <p>Des véhicules confortables, avec une place assise garantie et des services à bord</p>
         </div>
@@ -68,7 +71,7 @@
 
       <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0">
         <div class="benefit">
-          <%= image_tag 'favicon.png' %>
+          <%= image_tag 'responsible.png' %>
           <h3>Responsable</h3>
           <p>Participez à une action citoyenne destinée à rendre nos villes plus agréables à vivre</p>
         </div>
@@ -76,7 +79,7 @@
 
       <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0">
         <div class="benefit">
-          <%= image_tag 'favicon.png' %>
+          <%= image_tag 'economical.png' %>
           <h3>Economique</h3>
           <p>Faites des économies par rapport à l’utilisation de la voiture</p>
         </div>
@@ -84,7 +87,7 @@
 
       <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0">
         <div class="benefit">
-          <%= image_tag 'favicon.png' %>
+          <%= image_tag 'fast.png' %>
           <h3>Rapide</h3>
           <p>Gagnez du temps grâce à notre technologie intelligente de prise en charge et d’optimisation des trajets</p>
         </div>
@@ -92,7 +95,7 @@
 
       <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0">
         <div class="benefit">
-          <%= image_tag 'favicon.png' %>
+          <%= image_tag 'simplicity.png' %>
           <h3>Simplicité</h3>
           <p>Des interfaces, applications et site web accessibles à tous</p>
         </div>
@@ -112,12 +115,14 @@
     <div class="explanation">
       <div class="row gutter-0">
         <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0">
-          <%= image_tag 'banner.jpg' %>
+          <%= image_tag 'van.jpg' %>
         </div>
         <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0">
           <div class="explanation-content">
-            <h3>Des minibus confortables</h3>
-            <p>Capacité de 9 à 14 personnes, des équipements utiles : chargeurs USB, Wifi..., des équipements à la demande : rack vélo...</p>
+            <%= image_tag 'coral_van_icon.png' %>
+            <h3>Des navettes et des chauffeurs</h3>
+            <p>Votre sécurité et votre confort sont au centre de nos préoccupations. Nos véhicules sont conduits par des chauffeurs professionnels, répondant à une charte de qualité exigeante.</p>
+            <p>Ces véhicules sont des vans de 8 places, récents et spacieux. Et pour que l’expérience à bord soit encore meilleure, nous vous proposons des services à bord : chargeurs smartphone et ordinateurs, wifi, presse...</p>
           </div>
         </div>
       </div>
@@ -126,12 +131,34 @@
     <div class="explanation">
       <div class="row gutter-0">
         <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-push-6 col-sm-offset-0">
-          <%= image_tag 'banner.jpg' %>
+          <%= image_tag 'map.jpg' %>
         </div>
         <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-pull-6 col-sm-offset-0">
           <div class="explanation-content">
-            <h3>Des minibus confortables</h3>
-            <p>Capacité de 9 à 14 personnes, des équipements utiles : chargeurs USB, Wifi..., des équipements à la demande : rack vélo...</p>
+            <%= image_tag 'geolocation_icon.png' %>
+            <h3>Des lignes intelligentes, optimisées pour votre trajet domicile-travail</h3>
+            <p>Pour que vos trajets avec Kariol soient une réussite, il est essentiel de prendre en compte tout un ensemble de critères fixes et variables.</p>
+            <p>Nous utilisons ensuite notre algorithme pour créer des lignes de transports optimisée en temps réel. Cette technologie nous garantie le temps de trajet le plus court, et plus de 95% de trajets sans retards.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="explanation">
+      <div class="row gutter-0">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0">
+          <%= image_tag 'interface.jpg' %>
+        </div>
+        <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0">
+          <div class="explanation-content">
+            <%= image_tag 'interface_icon.png' %>
+            <h3>Des interfaces simples, application et site web, pour l’utilisation au quotidien</h3>
+            <p>Pour que l’utilisation du service vous soit la plus facile, nous avons conçu une application et un site internet vous permettant de :</p>
+            <ul>
+              <li>Réserver votre siège dans une navette, avec la garantie d’être assis.</li>
+              <li>Payer en ligne</li>
+              <li>Suivre en temps réel le véhicule. Vous savez quand arrive votre Kariol et à quelle heure vous arriverez à destination, parce que la ponctualité est importante !</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -141,6 +168,7 @@
 
 <div class="section-title">
   <div class="container">
+    <%= image_tag 'pricing.png' %>
     <h2>Pas de surprise, le tarif est fixe au trajet ou par abonnement avec un prise en charge possible par votre entrperise</h2>
   </div>
 </div>
@@ -169,7 +197,7 @@
     <div class="row">
       <div class="col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-0">
         <div class="team-member">
-          <img src="https://pbs.twimg.com/profile_images/689409004234080256/tMvgBcgB.jpg" alt="">
+          <%= image_tag 'nicolas.png' %>
           <h3>Nicolas Dinouard</h3>
           <p>Le voyage est une grande partie de ma vie, j’aimerai rendre les voyages du quotidien plus intelligents</p>
         </div>
@@ -177,7 +205,7 @@
 
       <div class="col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-0">
         <div class="team-member">
-          <img src="http://scontent.cdninstagram.com/t51.2885-19/s150x150/15305940_1182706981807303_6324349114410598400_a.jpg" alt="">
+          <%= image_tag 'francoisl.png' %>
           <h3>François Larratte</h3>
           <p>De nature très urbaine, je cherche à apporter une solution pour aider les villes à se vider des voitures individuelles</p>
         </div>
@@ -185,7 +213,7 @@
 
       <div class="col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-0">
         <div class="team-member">
-          <img src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/1/000/0c6/0ac/20566a1.jpg" alt="">
+          <%= image_tag 'francoisc.png' %>
           <h3>François Catuhe</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
@@ -193,7 +221,7 @@
 
       <div class="col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-0">
         <div class="team-member">
-          <img src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/p/5/000/1d3/2d5/15a43af.jpg" alt="">
+          <%= image_tag 'aurelie.png' %>
           <h3>Aurélie Ronfaut</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
