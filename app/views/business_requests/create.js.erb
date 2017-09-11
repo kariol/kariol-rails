@@ -4,4 +4,4 @@
   $('#business-request-modal').modal('hide')
   $('#new-business-request').html("<%= j render 'form' %>");
 <% end %>
-autocomplete($('#business_request_address_attributes_complete'));
+autocomplete(document.querySelector('#business_request_address_attributes_complete'));

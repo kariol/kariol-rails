@@ -4,7 +4,7 @@
   $('#commute-request-modal').modal('hide')
   $('.new-commute-request').html("<%= j render 'form' %>");
 <% end %>
-autocomplete($('.banner-form #commute_request_origin_attributes_complete'));
-autocomplete($('.cta-form #commute_request_origin_attributes_complete'));
-autocomplete($('.banner-form #commute_request_destination_attributes_complete'));
-autocomplete($('.cta-form #commute_request_destination_attributes_complete'));
+autocomplete(document.querySelector('.banner-form #commute_request_origin_attributes_complete'));
+autocomplete(document.querySelector('.cta-form #commute_request_origin_attributes_complete'));
+autocomplete(document.querySelector('.banner-form #commute_request_destination_attributes_complete'));
+autocomplete(document.querySelector('.cta-form #commute_request_destination_attributes_complete'));
