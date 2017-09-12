@@ -1,80 +1,205 @@
-<div class="banner" style="background-image: linear-gradient(rgba(54, 66, 112, 0.7), rgba(115, 188, 149, 0.4)), url('http://www.naturalnews.com/gallery/640/Children/Friends-Bus-Transportation-Talking.jpg');">
-  <div class="banner-container">
-    <div class="banner-top">
-      <%= link_to root_path do %>
-        <%= image_tag 'logo.png' %>
-      <% end %>
-      <%= link_to 'Employés', root_path, class: 'btn btn-primary' %>
+<div class="banner">
+  <div class="banner-top">
+    <div class="container">
+      <div class="banner-top-content">
+        <%= link_to root_path do %>
+          <%= image_tag 'logo.png' %>
+        <% end %>
+        <div class="hidden-xs">
+          <%= image_tag 'blue_van_icon.png' %>
+          <%= link_to 'Particulier ? Embarquez ici', root_path, class: 'btn btn-info' %>
+        </div>
+        <div class="visible-xs">
+          <%= link_to 'Particulier', root_path, class: 'btn btn-info' %>
+        </div>
+      </div>
     </div>
+  </div>
+  <div class="banner-large-container hidden-xs" style="background-image: url('<%= image_path 'banner-alternate.png' %>');">
+    <div class="banner-content" style="background-image: url('<%= image_path 'banner.png' %>');">
+      <div class="banner-spacer hidden-sm"></div>
 
-    <div class="banner-content">
-      <div class="banner-headline">
-        <h1>Le quotidien de vos employés réinventé</h1>
+
+      <div class="banner-spacer visible-sm"></div>
+    </div>
+  </div>
+  <div class="banner-content hidden-sm hidden-md hidden-lg">
+  </div>
+</div>
+
+<div class="benefits">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0">
+        <div class="benefit">
+          <%= image_tag 'quality_of_life.png' %>
+          <h3>Qualité de vie</h3>
+          <p>Libérez-vous du stress lié à la conduite, ou des contraintes des transports en commun</p>
+        </div>
       </div>
 
-      <div class="row">
-        <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-6">
-          <div class="banner-description">
-            <p><strong>Lorem ipsum</strong> dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          </div>
+      <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0">
+        <div class="benefit">
+          <%= image_tag 'confort.png' %>
+          <h3>Confort</h3>
+          <p>Des véhicules confortables, avec une place assise garantie et des services à bord</p>
+        </div>
+      </div>
 
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#businessRequestModal">
-            Demander une simulation
-          </button>
+      <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0">
+        <div class="benefit">
+          <%= image_tag 'responsible.png' %>
+          <h3>Responsable</h3>
+          <p>Participez à une action citoyenne destinée à rendre nos villes plus agréables à vivre</p>
+        </div>
+      </div>
+
+      <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0">
+        <div class="benefit">
+          <%= image_tag 'economical.png' %>
+          <h3>Economique</h3>
+          <p>Faites des économies par rapport à l’utilisation de la voiture</p>
+        </div>
+      </div>
+
+      <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0">
+        <div class="benefit">
+          <%= image_tag 'fast.png' %>
+          <h3>Rapide</h3>
+          <p>Gagnez du temps grâce à notre technologie intelligente de prise en charge et d’optimisation des trajets</p>
+        </div>
+      </div>
+
+      <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0">
+        <div class="benefit">
+          <%= image_tag 'simplicity.png' %>
+          <h3>Simplicité</h3>
+          <p>Des interfaces, applications et site web accessibles à tous</p>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<div class="container">
-  <div class="panel panel-default">
-    <div class="panel-heading">Benefits</div>
-    <div class="panel-body">
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#businessRequestModal">
-        Demander une simulation
-      </button>
-    </div>
+<div class="section-title">
+  <div class="container">
+    <h2>Privilégier votre qualité de vie en réinventant votre quotidien, comment ça marche ?</h2>
   </div>
+</div>
 
-  <div class="panel panel-default">
-    <div class="panel-heading">Description</div>
-    <div class="panel-body">
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#businessRequestModal">
-        Demander une simulation
-      </button>
+<div class="explanations">
+  <div class="container">
+    <div class="explanation">
+      <div class="row gutter-0">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0">
+          <%= image_tag 'van.jpg' %>
+        </div>
+        <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0">
+          <div class="explanation-content">
+            <%= image_tag 'coral_van_icon.png' %>
+            <h3>Des navettes et des chauffeurs</h3>
+            <p>Votre sécurité et votre confort sont au centre de nos préoccupations. Nos véhicules sont conduits par des chauffeurs professionnels, répondant à une charte de qualité exigeante.</p>
+            <p>Ces véhicules sont des vans de 8 places, récents et spacieux. Et pour que l’expérience soit encore meilleure, nous vous proposons des services à bord : chargeurs smartphone et ordinateurs, wifi, presse...</p>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
 
-  <div class="panel panel-default">
-    <div class="panel-heading">Numbers</div>
-    <div class="panel-body">
-      <div id="num"></div>
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#businessRequestModal">
-        Demander une simulation
-      </button>
+    <div class="explanation">
+      <div class="row gutter-0">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-push-6 col-sm-offset-0">
+          <%= image_tag 'map.jpg' %>
+        </div>
+        <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-pull-6 col-sm-offset-0">
+          <div class="explanation-content">
+            <%= image_tag 'geolocation_icon.png' %>
+            <h3>Des lignes intelligentes, optimisées pour votre trajet domicile-travail</h3>
+            <p>Pour que vos trajets avec Kariol soient une réussite, il est essentiel de prendre en compte tout un ensemble de critères fixes et variables.</p>
+            <p>Nous utilisons ensuite notre algorithme pour créer des lignes de transports optimisée en temps réel. Cette technologie nous garantie le temps de trajet le plus court, et plus de 95% de trajets sans retards.</p>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
 
-  <div class="panel panel-default">
-    <div class="panel-heading">Team</div>
-    <div class="panel-body">
+    <div class="explanation">
+      <div class="row gutter-0">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0">
+          <%= image_tag 'interface.jpg' %>
+        </div>
+        <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0">
+          <div class="explanation-content">
+            <%= image_tag 'interface_icon.png' %>
+            <h3>Des interfaces simples, application et site web, pour l’utilisation au quotidien</h3>
+            <p>Pour que l’utilisation du service vous soit la plus facile, nous avons conçu une application et un site internet vous permettant de :</p>
+            <ul>
+              <li>Réservez votre siège dans une navette, avec la garantie d’être assis.</li>
+              <li>Payez en ligne</li>
+              <li>Suivez en temps réel le véhicule. Vous savez quand arrive votre Kariol et à quelle heure vous arriverez à destination, parce que la ponctualité est importante !</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
 
-<%= content_for :js do %>
-  <script type="text/javascript">
-    var numAnim = new CountUp("num", 24.02, 99.99);
-    if (!numAnim.error) {
-    } else {
-      console.error(numAnim.error);
-    };
-    numAnim.start();
-  </script>
-<% end %>
+<div class="section-title">
+  <div class="container">
+    <%= image_tag 'coral_blue_van_icon.png' %>
+    <h2>Kariol est adapté à l'ensemble des entreprises d'une même zone d'activité, vous permettant un plan de déplacement inter-entreprises</h2>
+  </div>
+</div>
 
-<!-- Modal -->
+<div class="cta">
+    <div class="container">
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#businessRequestModal">
+        Demandez une simulation
+      </button>
+    </div>
+</div>
+
+<div class="team">
+  <div class="container">
+    <div class="team-title">
+      <h2>Une équipe fondée autour d'un objectif commun</h2>
+      <h4>Rendre les villes plus durables et agréables à vivre. Notre mission démarre par rendre le transport domicile-travail plus intelligent !</h4>
+    </div>
+    <div class="row">
+      <div class="col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-0">
+        <div class="team-member">
+          <%= image_tag 'nicolas.png' %>
+          <h3>Nicolas Dinouard</h3>
+          <p>Le voyage est une grande partie de ma vie, j’aimerai rendre les voyages du quotidien plus intelligents</p>
+        </div>
+      </div>
+
+      <div class="col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-0">
+        <div class="team-member">
+          <%= image_tag 'francoisl.png' %>
+          <h3>François Larratte</h3>
+          <p>De nature très urbaine, je cherche à apporter une solution pour aider les villes à se vider des voitures individuelles</p>
+        </div>
+      </div>
+
+      <div class="col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-0">
+        <div class="team-member">
+          <%= image_tag 'francoisc.png' %>
+          <h3>François Catuhe</h3>
+          <p>J'aime quand tout est bien optimisé, toutes ces voitures sur les routes le matin évoquent le travail à réaliser !</p>
+        </div>
+      </div>
+
+      <div class="col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-0">
+        <div class="team-member">
+          <%= image_tag 'aurelie.png' %>
+          <h3>Aurélie Ronfaut</h3>
+          <p>Sensible à l'environnement, je défend l'harmonie entre vie professionnelle et vie personnelle, et cela passe aussi par le transport</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="modal fade" id="businessRequestModal" tabindex="-1" role="dialog" aria-labelledby="businessRequestModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -91,3 +216,5 @@
     </div>
   </div>
 </div>
+
+<div id="shareModalContainer"></div>
