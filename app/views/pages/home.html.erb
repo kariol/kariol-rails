@@ -1,46 +1,31 @@
 <div class="banner">
-  <div class="banner-container">
-    <div class="banner-top">
-      <div class="container">
-        <div class="banner-top-content">
-          <%= link_to root_path do %>
-            <%= image_tag 'logo.png' %>
-          <% end %>
-          <div class="hidden-xs">
-            <%= image_tag 'blue_van_icon.png' %>
-            <%= link_to 'Entreprise, embarquez ici', enterprise_path, class: 'btn btn-info' %>
-          </div>
-          <div class="visible-xs">
-            <%= link_to 'Entreprise', enterprise_path, class: 'btn btn-info' %>
-          </div>
+  <div class="banner-top">
+    <div class="container">
+      <div class="banner-top-content">
+        <%= link_to root_path do %>
+          <%= image_tag 'logo.png' %>
+        <% end %>
+        <div class="hidden-xs">
+          <%= image_tag 'blue_van_icon.png' %>
+          <%= link_to 'Entreprise ? Embarquez ici', enterprise_path, class: 'btn btn-info' %>
+        </div>
+        <div class="visible-xs">
+          <%= link_to 'Entreprise', enterprise_path, class: 'btn btn-info' %>
         </div>
       </div>
     </div>
+  </div>
+  <div class="banner-large-container hidden-xs" style="background-image: url('<%= image_path 'banner-alternate.png' %>');">
     <div class="banner-content" style="background-image: url('<%= image_path 'banner.png' %>');">
-      <div class="banner-headline">
-        <div class="container">
-          <div class="row">
-            <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-4">
-              <h1>Laissez-vous transporter</h1>
-              <h4>Kariol est un service de navettes collectives, qui vous transporte de votre domicile à votre travail rapidement et confortablement</h4>
-            </div>
-          </div>
-        </div>
-      </div>
+      <div class="banner-spacer hidden-sm"></div>
 
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-6">
-            <div class="banner-form">
-              <p>Précisez-nous votre trajet, Kariol arrive !</p>
-              <div class="new-commute-request">
-                <%= render 'commute_requests/form' %>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <%= render 'home_banner_content' %>
+
+      <div class="banner-spacer visible-sm"></div>
     </div>
+  </div>
+  <div class="banner-content hidden-sm hidden-md hidden-lg">
+    <%= render 'home_banner_content' %>
   </div>
 </div>
 
@@ -177,7 +162,7 @@
     <div class="container">
       <div class="row">
         <h2>Précisez-nous votre trajet, Kariol arrive !</h2>
-        <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
           <div class="cta-form">
             <div class="new-commute-request">
               <%= render 'commute_requests/form' %>

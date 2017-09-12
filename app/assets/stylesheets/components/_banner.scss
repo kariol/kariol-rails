@@ -3,16 +3,11 @@
   color: $brand-color-text;
   min-height: 100vh;
   /* if you have a 70px navbar => height: calc(100vh - 70px); */
+  width: 100%;
   display: flex;
+  flex-direction: column;
   align-items: stretch;
-  justify-content: center;
-  &-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: space-between;
-  }
+  justify-content: space-between;
   &-top {
     background-color: $brand-color;
     padding: 10px 0;
@@ -29,15 +24,25 @@
       }
     }
   }
+  &-large-container {
+    background-size: cover !important;
+    background-position: right top;
+    flex: 1 0 auto;
+    display: flex;
+  }
   &-content {
     background-size: cover !important;
     background-position: left bottom;
-    padding-bottom: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     flex: 1 0 auto;
     display: flex;
     flex-direction: column;
     align-items: stretch;
     justify-content: space-around;
+  }
+  &-spacer {
+    height: 1px;
   }
   &-headline {
     text-align: right;
