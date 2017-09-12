@@ -1,7 +1,8 @@
 <% if @commute_request.errors.any? %>
   $('.new-commute-request').html("<%= j render 'form' %>");
 <% else %>
-  $('#commute-request-modal').modal('hide')
+  $('#shareModalContainer').html("<%= j render 'share_modal' %>");
+  $('#shareModal').modal('show');
   $('.new-commute-request').html("<%= j render 'form' %>");
 <% end %>
 autocomplete(document.querySelector('.banner-form #commute_request_origin_attributes_complete'));

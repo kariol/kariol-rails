@@ -1,7 +1,7 @@
 <% if @business_request.errors.any? %>
-  $('#new-business-request').html("<%= j render 'form' %>");
+  $('#newBusinessRequest').html("<%= j render 'form' %>");
 <% else %>
-  $('#business-request-modal').modal('hide')
-  $('#new-business-request').html("<%= j render 'form' %>");
+  $('#businessRequestModal').modal('hide')
+  $('#newBusinessRequest').html("<%= j render 'form' %>");
 <% end %>
 autocomplete(document.querySelector('#business_request_address_attributes_complete'));

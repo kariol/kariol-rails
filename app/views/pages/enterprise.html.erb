@@ -18,7 +18,7 @@
             <p><strong>Lorem ipsum</strong> dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           </div>
 
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#business-request-modal">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#businessRequestModal">
             Demander une simulation
           </button>
         </div>
@@ -31,7 +31,7 @@
   <div class="panel panel-default">
     <div class="panel-heading">Benefits</div>
     <div class="panel-body">
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#business-request-modal">
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#businessRequestModal">
         Demander une simulation
       </button>
     </div>
@@ -40,7 +40,7 @@
   <div class="panel panel-default">
     <div class="panel-heading">Description</div>
     <div class="panel-body">
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#business-request-modal">
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#businessRequestModal">
         Demander une simulation
       </button>
     </div>
@@ -50,7 +50,7 @@
     <div class="panel-heading">Numbers</div>
     <div class="panel-body">
       <div id="num"></div>
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#business-request-modal">
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#businessRequestModal">
         Demander une simulation
       </button>
     </div>
@@ -75,16 +75,16 @@
 <% end %>
 
 <!-- Modal -->
-<div class="modal fade" id="business-request-modal" tabindex="-1" role="dialog" aria-labelledby="business-request-modal-label">
+<div class="modal fade" id="businessRequestModal" tabindex="-1" role="dialog" aria-labelledby="businessRequestModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="business-request-modal-label">Demande de simulation</h4>
+        <h4 class="modal-title" id="businessRequestModalLabel">Demande de simulation</h4>
       </div>
 
       <div class="modal-body">
-        <div id="new-business-request">
+        <div id="newBusinessRequest">
           <%= render 'business_requests/form' %>
         </div>
       </div>
