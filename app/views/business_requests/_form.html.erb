@@ -1,37 +1,37 @@
 <%= simple_form_for @business_request, remote: true do |f| %>
   <div class="row">
     <div class="col-xs-12 col-md-6">
-      <%= f.input :first_name, placeholder: 'Roger' %>
+      <%= f.input :first_name %>
     </div>
 
     <div class="col-xs-12 col-md-6">
-      <%= f.input :last_name, placeholder: 'Roger' %>
+      <%= f.input :last_name %>
     </div>
 
     <div class="col-xs-12 col-md-6">
-      <%= f.input :email, placeholder: 'roger@kariol.co' %>
+      <%= f.input :email %>
     </div>
 
     <div class="col-xs-12 col-md-6">
-      <%= f.input :phone, placeholder: '01 23 45 67 89' %>
+      <%= f.input :phone %>
     </div>
 
     <div class="col-xs-12 col-md-6">
-      <%= f.input :company, placeholder: 'Carry All corp' %>
+      <%= f.input :company %>
     </div>
 
     <div class="col-xs-12 col-md-6">
       <%= f.input :employee_range,
-                  prompt: "Nombre d'employés",
+                  prompt: 'Sélectionnez',
                   collection: BusinessRequest::EMPLOYEE_RANGES %>
     </div>
   </div>
 
   <%= f.simple_fields_for :address do |a| %>
-    <%= a.input :complete, placeholder: 'Addresse' %>
+    <%= a.input :complete, placeholder: '' %>
   <% end %>
 
-  <%= f.input :message, placeholder: 'Décrivez votre plan de mobilité' %>
+  <%= f.input :message %>
 
   <%= f.submit "Envoyer", class: 'btn btn-block btn-primary' %>
 <% end %>
