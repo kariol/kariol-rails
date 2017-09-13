@@ -1,13 +1,28 @@
 .explanations {
   color: $brand-color-text;
+  .row {
+    display: flex;
+  }
   img {
+    flex: 1 0 auto;
     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    &.fit-right {
+      object-position: right;
+    }
   }
   .explanation {
     &-content {
+      height: 100%;
       padding: 15px;
       text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       img {
+        flex:none;
         width: auto;
         height: 60px;
       }
@@ -15,5 +30,11 @@
         text-align: justify;
       }
     }
+  }
+}
+
+@media(max-width:767px){
+  .explanations .row {
+    display: block;
   }
 }
