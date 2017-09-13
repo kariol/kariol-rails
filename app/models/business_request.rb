@@ -33,7 +33,6 @@ class BusinessRequest < ApplicationRecord
             }
   validates :company, presence: true
   validates :employee_range, presence: true, inclusion: { in: EMPLOYEE_RANGES }
-  validates :message, presence: true
   # == Scopes ================================================================
   # == Callbacks =============================================================
   after_create :subscribe_to_mailchimp
