@@ -21,10 +21,17 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      &-left {
+        align-items: flex-start;
+      }
       img {
         flex:none;
         width: auto;
         height: 60px;
+      }
+      .steps {
+        font-size: 10rem;
+        color: $brand-color;
       }
       p, li {
         text-align: justify;
