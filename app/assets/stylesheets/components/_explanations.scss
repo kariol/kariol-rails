@@ -8,8 +8,8 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    &.fit-right {
-      object-position: right;
+    &.fit-left {
+      object-position: left;
     }
   }
   .explanation {
