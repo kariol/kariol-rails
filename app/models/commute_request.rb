@@ -1,6 +1,6 @@
 class CommuteRequest < ApplicationRecord
   # == Constants =============================================================
-  ARRIVAL_TIMES = %w[07h00 07h30 08h00 08h30 09h00 09h30].freeze
+  ARRIVAL_TIMES = %w[06h00 06h30 07h00 07h30 08h00 08h30 09h00 09h30 10h00 10h30].freeze
   MAILCHIMP_LIST_ID = '220c70f97c'.freeze
   # == Attributes ============================================================
   # == Extensions ============================================================
