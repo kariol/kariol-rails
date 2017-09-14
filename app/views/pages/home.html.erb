@@ -15,17 +15,36 @@
       </div>
     </div>
   </div>
-  <div class="banner-large-container hidden-xs" style="background-image: url('<%= image_path 'banner-alternate.png' %>');">
+  <div class="banner-large-container" style="background-image: url('<%= image_path 'banner-alternate.png' %>');">
     <div class="banner-content" style="background-image: url('<%= image_path 'banner.png' %>');">
-      <div class="banner-spacer hidden-sm"></div>
+      <div class="banner-spacer hidden-xs hidden-sm"></div>
 
-      <%= render 'home_banner_content' %>
+      <div class="banner-headline">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-2 col-md-8 col-md-offset-4">
+              <h1>Laissez-vous transporter</h1>
+              <h4>Kariol est un service de navettes collectives, qui vous transporte de votre domicile à votre travail rapidement et confortablement</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-10 col-xs-offset-1 col-sm-9 col-sm-offset-3 col-md-7 col-md-offset-5">
+            <div class="banner-form">
+              <p>Précisez-nous votre trajet, Kariol arrive !</p>
+              <div class="new-commute-request">
+                <%= render 'commute_requests/form' %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div class="banner-spacer visible-sm"></div>
     </div>
-  </div>
-  <div class="banner-content hidden-sm hidden-md hidden-lg">
-    <%= render 'home_banner_content' %>
   </div>
 </div>
 
