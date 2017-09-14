@@ -33,6 +33,13 @@ class CommuteRequest < ApplicationRecord
 
   def subscribe_to_mailchimp
     mailchimp_list_id = Rails.env.production? ? MAILCHIMP_LIST_ID : ENV['MAILCHIMP_LIST_ID']
-    MailchimpSubscribeJob.perform_later(email, mailchimp_list_id)
+    merge_fields = if company.present?
+                     {
+                       COMPANY: company
+                     }
+                   else
+                     {}
+                   end
+    MailchimpSubscribeJob.perform_later(email, mailchimp_list_id, merge_fields)
   end
 end
