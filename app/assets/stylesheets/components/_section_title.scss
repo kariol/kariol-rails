@@ -11,4 +11,11 @@
     margin-bottom: 0;
     text-transform: uppercase;
   }
+  &-inverse {
+    background-color: $brand-color-text;
+    color: white;
+  }
+  .btn {
+    margin-top: 15px;
+  }
 }

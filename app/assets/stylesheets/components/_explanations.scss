@@ -15,7 +15,7 @@
   .explanation {
     &-content {
       height: 100%;
-      padding: 15px;
+      padding: 50px;
       text-align: center;
       display: flex;
       flex-direction: column;
@@ -28,11 +28,15 @@
       img {
         flex:none;
         width: auto;
-        height: 60px;
+        height: 120px;
+        margin-top: -25px;
       }
       .steps {
         font-size: 10rem;
         color: $brand-color;
+      }
+      h3 {
+        margin-top: 0;
       }
       p, li {
         text-align: justify;

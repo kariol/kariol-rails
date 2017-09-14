@@ -192,6 +192,13 @@
     </div>
 </div>
 
+<div class="section-title section-title-inverse">
+  <div class="container">
+    <h2>Vous êtes une entreprise ?</h2>
+    <%= link_to 'Embarquez ici', enterprise_path, class: 'btn btn-info' %>
+  </div>
+</div>
+
 <div class="team">
   <div class="container">
     <div class="team-title">
@@ -235,3 +242,5 @@
 </div>
 
 <div id="shareModalContainer"></div>
+
+<%= render 'commute_requests/share_modal' %>
