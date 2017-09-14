@@ -15,12 +15,15 @@
   .explanation {
     &-content {
       height: 100%;
-      padding: 50px;
+      padding: 15px;
       text-align: center;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      &-padded {
+        padding: 50px;
+      }
       &-left {
         align-items: flex-start;
         text-align: left;
