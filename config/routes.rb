@@ -8,6 +8,7 @@ Rails.application.routes.draw do
 
   root to: 'pages#home'
   get 'entreprise', to: 'pages#enterprise', as: :enterprise
+  get 'pro', to: 'pages#pro'
   get 'legal', to: 'pages#legal'
 
   resources :business_requests, only: [ :create ]

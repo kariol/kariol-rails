@@ -7,5 +7,7 @@ class PagesController < ApplicationController
     @business_request = BusinessRequest.new(address: Address.new)
   end
 
+  def pro; end
+
   def legal; end
 end
