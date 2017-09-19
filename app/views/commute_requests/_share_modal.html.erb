@@ -10,7 +10,11 @@
         <p>Un email de bienvenue vous a été envoyé.</p>
         <p>Partagez Kariol à vos proches, plus il y a de personnes inscrites sur le site, plus les chances de créer une ligne adaptée à vos besoins sont grandes !</p>
         <div class="text-center">
-          <%= mail_to nil, 'Je partage', subject: "J'ai découvert Kariol, un service de navettes domicile-travail", body: "Je me suis inscrit sur le site de Kariol pour avoir une ligne de navettes à côté de chez moi.\r\rSi tu es intéressé, voici le lien :\r\rhttps://kariol.co", class: 'btn btn-primary', target: :_blank %>
+          <%= mail_to nil, 'Je partage',
+                      subject: "J'ai découvert Kariol, un service de navettes domicile-travail",
+                      body: "Je viens de découvrir un service de navettes pour optimiser les trajets quotidiens jusqu'au travail, je pense que ça pourrait t'intéresser ! Jette un œil et inscris-toi pour pouvoir créer une ligne de transport à côté de chez toi.\r\rC'est par là : https://kariol.co !",
+                      class: 'btn btn-primary',
+                      target: :_blank %>
         </div>
       </div>
     </div>

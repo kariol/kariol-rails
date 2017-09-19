@@ -44,6 +44,7 @@ gem 'scout_apm'
 gem 'sidekiq'
 gem 'sidekiq-failures'
 gem 'simple_form'
+gem 'webpacker', require: false
 
 # Custom Front
 gem 'bootstrap-sass'
