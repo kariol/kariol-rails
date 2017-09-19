@@ -1,4 +1,4 @@
-document.addEventListener('turbolinks:load', function() {
+$(document).ready(function() {
   autocomplete(document.querySelector('.banner-form #commute_request_origin_attributes_complete'));
   autocomplete(document.querySelector('.cta-form #commute_request_origin_attributes_complete'));
   autocomplete(document.querySelector('.banner-form #commute_request_destination_attributes_complete'));

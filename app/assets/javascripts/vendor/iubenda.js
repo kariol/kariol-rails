@@ -1,4 +1,4 @@
-document.addEventListener('turbolinks:load', function() {
+$(document).ready(function() {
   if (document.querySelector(".pages.legal")) {
     (function (w,d) {
       var loader = function () {
@@ -7,7 +7,7 @@ document.addEventListener('turbolinks:load', function() {
         tag.parentNode.insertBefore(s,tag);
       };
       if(w.addEventListener){
-        w.addEventListener("turbolinks:load", loader, false);
+        w.addEventListener("load", loader, false);
       }else if(w.attachEvent){
         w.attachEvent("onload", loader);
       }else{

@@ -1,4 +1,4 @@
-document.addEventListener('turbolinks:load', function() {
+$(document).ready(function() {
   const flashNotice = $('#flashNotice');
   if (flashNotice.length) {
     setTimeout(function(){

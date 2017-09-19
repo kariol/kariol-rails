@@ -1,4 +1,4 @@
-document.addEventListener('turbolinks:load', function() {
+$(document).ready(function() {
   if (document.querySelector('.pages.pro')) {
     mapboxgl.accessToken = 'pk.eyJ1IjoicGFkYW1pbyIsImEiOiJjajE1MHpvaDgwMDBxMnFuNW16cjFwZXNhIn0.SrEc4qX1z94maLdY-XisZQ';
     var map = new mapboxgl.Map({

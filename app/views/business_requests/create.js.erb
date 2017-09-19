@@ -1,0 +1,11 @@
+<% if @business_request.errors.any? %>
+  $('#newBusinessRequest').html("<%= j render 'form' %>");
+  ga('send', 'event', 'business_request', 'submit_incomplete');
+<% else %>
+  $('#businessRequestModal').modal('hide');
+  $('#shareModalContainer').html("<%= j render 'share_modal' %>");
+  $('#shareModal').modal('show');
+  $('#newBusinessRequest').html("<%= j render 'form' %>");
+  ga('send', 'event', 'business_request', 'submit');
+<% end %>
+autocomplete(document.querySelector('#business_request_address_attributes_complete'));
