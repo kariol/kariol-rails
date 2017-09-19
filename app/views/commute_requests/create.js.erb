@@ -1,10 +1,10 @@
 <% if @commute_request.errors.any? %>
   $('.new-commute-request').html("<%= j render 'form' %>");
-  
   ga('send', 'event', 'commute_request', 'submit_incomplete');
 <% else %>
   $('#shareModalContainer').html("<%= j render 'share_modal' %>");
   $('#shareModal').modal('show');
+  FB.XFBML.parse(document.getElementById('shareModal'));
   $('.new-commute-request').html("<%= j render 'form' %>");
   ga('send', 'event', 'commute_request', 'submit');
 <% end %>
