@@ -13,4 +13,5 @@ Rails.application.routes.draw do
 
   resources :business_requests, only: [ :create ]
   resources :commute_requests, only: [ :create ]
+  resources :pro_requests, only: [ :create ]
 end

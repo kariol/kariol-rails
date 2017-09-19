@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170907164048) do
+ActiveRecord::Schema.define(version: 20170919155959) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -48,6 +48,17 @@ ActiveRecord::Schema.define(version: 20170907164048) do
     t.string "company"
     t.index ["destination_id"], name: "index_commute_requests_on_destination_id"
     t.index ["origin_id"], name: "index_commute_requests_on_origin_id"
+  end
+
+  create_table "pro_requests", force: :cascade do |t|
+    t.string "first_name"
+    t.string "last_name"
+    t.string "email"
+    t.string "phone"
+    t.string "company"
+    t.text "message"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   add_foreign_key "business_requests", "addresses"

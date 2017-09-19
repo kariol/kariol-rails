@@ -1,0 +1,27 @@
+<%= simple_form_for @pro_request, remote: true do |f| %>
+  <div class="row">
+    <div class="col-xs-12 col-md-6">
+      <%= f.input :first_name %>
+    </div>
+
+    <div class="col-xs-12 col-md-6">
+      <%= f.input :last_name %>
+    </div>
+
+    <div class="col-xs-12 col-md-6">
+      <%= f.input :email %>
+    </div>
+
+    <div class="col-xs-12 col-md-6">
+      <%= f.input :phone %>
+    </div>
+
+    <div class="col-xs-12 col-md-6">
+      <%= f.input :company %>
+    </div>
+  </div>
+
+  <%= f.input :message, label: "Comment envisagez-vous d'utiliser Kariol Pro ?" %>
+
+  <%= f.submit "Envoyer", class: 'btn btn-block btn-primary' %>
+<% end %>

@@ -17,7 +17,7 @@
       </div>
 
       <div class="navbar-kariol-right">
-        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#shuttleRequestModal">
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#proRequestModal">
           Contactez-nous
         </button>
       </div>
@@ -152,18 +152,19 @@
   </div>
 </div>
 
-<div class="modal fade" id="shuttleRequestModal" tabindex="-1" role="dialog" aria-labelledby="shuttleRequestModalLabel">
+<div class="modal fade" id="proRequestModal" tabindex="-1" role="dialog" aria-labelledby="proRequestModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="shuttleRequestModalLabel">Contactez-nous</h4>
       </div>
 
       <div class="modal-body">
-        <p>Appelez Nicolas Dinouard au 06 xx xx xx xx</p>
+        <h4>Contactez Nicolas Dinouard au 06 85 57 42 96</h4>
         <p>ou</p>
-        <div id="newShuttleRequest">
+        <h4>Demandez à être recontacté</h4>
+        <div id="newProRequest">
+          <%= render 'pro_requests/form' %>
         </div>
       </div>
     </div>

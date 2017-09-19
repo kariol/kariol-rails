@@ -1,0 +1,10 @@
+<% if @pro_request.errors.any? %>
+  $('#newProRequest').html("<%= j render 'form' %>");
+  ga('send', 'event', 'pro_request', 'submit_incomplete');
+<% else %>
+  $('#proRequestModal').modal('hide');
+  $('#shareModalContainer').html("<%= j render 'share_modal' %>");
+  $('#shareModal').modal('show');
+  $('#newProRequest').html("<%= j render 'form' %>");
+  ga('send', 'event', 'pro_request', 'submit');
+<% end %>
