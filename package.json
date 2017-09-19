@@ -1,5 +1,8 @@
 {
   "name": "kariol",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "mapbox-gl": "^0.40.1",
+    "mapbox-gl-geocoder": "^2.0.1"
+  }
 }

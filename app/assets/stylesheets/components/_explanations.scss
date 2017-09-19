@@ -12,6 +12,9 @@
       object-position: left;
     }
   }
+  #map {
+    min-height: 437px;
+  }
   .explanation {
     &-content {
       height: 100%;

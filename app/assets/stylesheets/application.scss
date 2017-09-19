@@ -8,6 +8,8 @@
 @import "bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
+@import "mapbox-gl/dist/mapbox-gl";
+@import "mapbox-gl-geocoder/dist/mapbox-gl-geocoder";
 
 // CSS partials
 @import "components/*";
