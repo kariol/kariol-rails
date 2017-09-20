@@ -16,14 +16,14 @@
     <meta property="og:url" content="<%= t('meta-url') %>">
     <meta property="og:title" content="<%= yield_with_default(:title, t('meta-title')) %>">
     <meta property="og:description" content="<%= yield_with_default(:description, t('meta-description')) %>">
-    <meta property="og:image" content="<%= t('meta-url') + image_path(yield_with_default(:og_image, 'og_image.jpg')) %>">
+    <meta property="og:image" content="<%= ENV['HOST'] + image_path(yield_with_default(:og_image, 'og_image.jpg')) %>">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="<%= t('meta-twitter') %>">
     <meta name="twitter:creator" content="<%= t('meta-twitter') %>">
     <meta name="twitter:title" content="<%= yield_with_default(:title, t('meta-title')) %>">
     <meta name="twitter:description" content="<%= yield_with_default(:description, t('meta-description')) %>">
-    <meta name="twitter:image:src" content="<%= t('meta-url') + image_path('og_image.jpg') %>">
+    <meta name="twitter:image:src" content="<%= ENV['HOST'] + image_path(yield_with_default(:og_image, 'og_image.jpg')) %>">
 
     <%= stylesheet_link_tag 'application', media: 'all' %>
   </head>
