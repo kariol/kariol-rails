@@ -13,7 +13,7 @@
     <div class="navbar-kariol-content">
       <div class="navbar-kariol-brand">
         <%= image_tag 'logo.png' %>
-        pro
+        <i>pro</i>
       </div>
 
       <div class="navbar-kariol-right">
@@ -73,9 +73,9 @@
       <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0">
         <div class="benefit">
           <%= image_tag 'simplicity.png' %>
-          <h3>Simple</h3>
-          <p>Une interface simple à utiliser pour tous les usagers</p>
-          <p>Une facturation centralisée au niveau de l’entreprise : rien à avancer, pas de notes de frais.</p>
+          <h3>Intuitif</h3>
+          <p>Simplifiez-vous la vie grâce à une interface unique utilisée par tous les usagers.</p>
+          <p>Centralisez la facturation : rien à avancer, pas de notes de frais.</p>
         </div>
       </div>
     </div>
@@ -98,40 +98,7 @@
     <div class="explanation">
       <div class="row gutter-0">
         <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0">
-          <%= image_tag 'van.jpg', class: 'fit-left' %>
-        </div>
-        <div class="col-xs-12 col-sm-6">
-          <div class="explanation-content explanation-content-padded">
-            <%= image_tag 'coral_van_icon.png', class: 'hidden-xs' %>
-            <h3>Navettes et chauffeurs</h3>
-            <p>Votre sécurité et votre confort sont au centre de nos préoccupations. Nos véhicules sont conduits par des chauffeurs professionnels, répondant à une charte de qualité exigeante.</p>
-            <p>Ces véhicules sont des berlines et vans récents et spacieux. Et pour que l’expérience soit encore meilleure, nous vous proposons des services à bord : chargeurs smartphone et ordinateurs, wifi, presse...</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="explanation">
-      <div class="row gutter-0">
-        <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-push-6 col-sm-offset-0">
-          <div id='map'></div>
-        </div>
-        <div class="col-xs-12 col-sm-6 col-sm-pull-6">
-          <div class="explanation-content explanation-content-padded">
-            <%= image_tag 'geolocation_icon.png', class: 'hidden-xs' %>
-            <h3>Zones desservies</h3>
-            <p>Des points de prise en charge toujours à moins de 500m sur l’ensemble de la zone desservie.</p>
-            <p>Des points de rencontre précis à chaque gare et terminal d’aéroport.</p>
-            <p>Au retour des gares et aéroports, la dépose peut s’effectuer à domicile sur simple demande au chauffeur.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="explanation">
-      <div class="row gutter-0">
-        <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0">
-          <div class="explanation-content bg-white-no-xs">
+          <div class="explanation-content bg-gray-no-xs">
             <iframe width="298" height="540" src="https://www.youtube.com/embed/SD7VwVNgxuc?rel=0&amp;showinfo=0;autoplay=1;loop=1;playlist=SD7VwVNgxuc" frameborder="0" allowfullscreen></iframe>
           </div>
         </div>
@@ -146,6 +113,92 @@
             <p>Suivez l’approche de votre véhicule en temps réel et soyez notifié de l’horaire de prise en charge précis.</p>
             <p>L’horaire d’arrivée indiquée prend en compte les détours potentiels et les conditions de trafic.</p>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="explanation">
+      <div class="row gutter-0">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-push-6 col-sm-offset-0">
+          <div id='map'></div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-sm-pull-6">
+          <div class="explanation-content explanation-content-padded">
+            <%= image_tag 'geolocation_icon.png', class: 'hidden-xs' %>
+            <h3>Zone de Saint-Quentin-En-Yvelines</h3>
+            <p>A l'aller, des points de prise en charge au pied de chaque entreprise ou à moins de 500m.</p>
+            <p>Au retour, des points de rencontre précis à chaque gare et terminal d’aéroport, et une dépose à domicile sur demande.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="explanation">
+      <div class="row gutter-0">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0">
+          <%= image_tag 'van.jpg', class: 'fit-left' %>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <div class="explanation-content explanation-content-padded">
+            <%= image_tag 'coral_van_icon.png', class: 'hidden-xs' %>
+            <h3>Navettes et chauffeurs</h3>
+            <p>Votre sécurité et votre confort sont au centre de nos préoccupations. Nos véhicules sont conduits par des chauffeurs professionnels, répondant à une charte de qualité exigeante.</p>
+            <p>Ces véhicules sont des berlines et vans récents et spacieux. Et pour que l’expérience soit encore meilleure, nous vous proposons des services à bord : chargeurs smartphone et ordinateurs, wifi, presse...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="cta">
+    <div class="container">
+      <button type="button" class="btn btn-info" data-toggle="modal" data-target="#proRequestModal">
+        Contactez-nous
+      </button>
+    </div>
+</div>
+
+<div class="team">
+  <div class="container">
+    <div class="team-title">
+      <h2>Une équipe fondée autour d'un objectif commun</h2>
+      <h4>Rendre les villes plus durables et agréables à vivre. Notre mission ? Proposer des transports plus intelligents !</h4>
+    </div>
+    <div class="row">
+      <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-3 col-md-offset-0">
+        <div class="team-member">
+          <%= image_tag 'nicolas.png' %>
+          <h3>Nicolas Dinouard</h3>
+          <h4>Business Développement</h4>
+          <p>Le voyage est une grande partie de ma vie, j’aimerais rendre les voyages du quotidien plus intelligents</p>
+        </div>
+      </div>
+
+      <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-3 col-md-offset-0">
+        <div class="team-member">
+          <%= image_tag 'francoisl.png' %>
+          <h3>François Larratte</h3>
+          <h4>Marketing & Communication</h4>
+          <p>De nature très urbaine, je cherche à apporter une solution pour aider les villes à se vider des voitures individuelles</p>
+        </div>
+      </div>
+
+      <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-3 col-md-offset-0">
+        <div class="team-member">
+          <%= image_tag 'francoisc.png' %>
+          <h3>François Catuhe</h3>
+          <h4>Opérations & Technique</h4>
+          <p>J'aime quand tout est bien optimisé, toutes ces voitures sur les routes le matin pointent la nécessité de trouver une alternative</p>
+        </div>
+      </div>
+
+      <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-3 col-md-offset-0">
+        <div class="team-member">
+          <%= image_tag 'aurelie.png' %>
+          <h3>Aurélie Ronfaut</h3>
+          <h4>Directrice de création</h4>
+          <p>Sensible à l'environnement, je défends l'harmonie entre vie professionnelle et vie personnelle, et cela passe aussi par le transport</p>
         </div>
       </div>
     </div>
