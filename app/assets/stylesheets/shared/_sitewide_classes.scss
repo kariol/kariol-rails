@@ -4,3 +4,9 @@
     background-image: none !important;
   }
 }
+
+@media(min-width:768px){
+  .bg-white-no-xs {
+    background-color: white;
+  }
+}
