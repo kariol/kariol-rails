@@ -12,8 +12,8 @@
 
     <meta property="fb:app_id" content="<%= t('meta-fb-app-id') %>"/>
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="yield_with_default(:title, t('meta-title'))">
-    <meta property="og:url" content="yield_with_default(:url, t('meta-url'))">
+    <meta property="og:site_name" content="<%= yield_with_default(:title, t('meta-title')) %>">
+    <meta property="og:url" content="<%= yield_with_default(:url, t('meta-url')) %>">
     <meta property="og:title" content="<%= yield_with_default(:title, t('meta-title')) %>">
     <meta property="og:description" content="<%= yield_with_default(:description, t('meta-description')) %>">
     <meta property="og:image" content="<%= ENV['HOST'] + image_path(yield_with_default(:og_image, 'og_image.jpg')) %>">
