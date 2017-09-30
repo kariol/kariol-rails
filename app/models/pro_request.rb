@@ -36,6 +36,6 @@ class ProRequest < ApplicationRecord
       LNAME: last_name,
       COMPANY: company
     }
-    MailchimpSubscribeJob.perform_later(email, mailchimp_list_id, merge_fields)
+    MailchimpSubscribeJob.perform_now(email, mailchimp_list_id, merge_fields)
   end
 end
