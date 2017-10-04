@@ -2,15 +2,19 @@
   <div class="banner-top">
     <div class="container">
       <div class="banner-top-content">
-        <%= link_to root_path do %>
-          <%= image_tag 'logo.png' %>
-        <% end %>
-        <div class="hidden-xs">
-          <%= image_tag 'blue_van_icon.png' %>
-          <%= link_to 'Entreprise ? Embarquez ici', enterprise_path, class: 'btn btn-info' %>
+        <div class="banner-top-brand">
+          <%= link_to root_path do %>
+            <%= image_tag 'logo.png' %>
+          <% end %>
         </div>
-        <div class="visible-xs">
-          <%= link_to 'Entreprise', enterprise_path, class: 'btn btn-info' %>
+        <div class="banner-top-cta">
+          <div class="hidden-xs">
+            <%= image_tag 'blue_van_icon.png' %>
+            <%= link_to 'Entreprise ? Embarquez ici', enterprise_path, class: 'btn btn-info' %>
+          </div>
+          <div class="visible-xs">
+            <%= link_to 'Entreprise', enterprise_path, class: 'btn btn-info' %>
+          </div>          
         </div>
       </div>
     </div>

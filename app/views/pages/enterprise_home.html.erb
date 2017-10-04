@@ -1,0 +1,263 @@
+<div class="banner">
+  <div class="banner-top">
+    <div class="container">
+      <div class="banner-top-content">
+        <div class="banner-top-brand">
+          <%= link_to enterprise_path do %>
+            <%= image_tag 'logo.png' %>
+          <% end %>
+          <i>home</i>
+        </div>
+        <div class="banner-top-cta">
+          <div class="hidden-xs">
+            <%= image_tag 'blue_van_icon.png' %>
+            <%= link_to 'Particulier ? Embarquez ici', root_path, class: 'btn btn-info' %>
+          </div>
+          <div class="visible-xs">
+            <%= link_to 'Particulier', root_path, class: 'btn btn-info' %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="banner-large-container">
+    <div class="banner-content banner-content-bottom" style="background-image: url('<%= image_path 'banner-enterprise.jpg' %>');">
+      <div class="banner-headline banner-headline-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+              <h1>Facilitez le transport de vos salariés</h1>
+              <h4>Adoptez notre service de navettes partagées intelligentes et valorisez le trajet domicile-travail</h4>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#businessRequestModal">
+                Demander une simulation
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="banner-spacer"></div>
+
+      <div class="banner-spacer"></div>
+
+      <div class="banner-spacer"></div>
+
+      <div class="banner-spacer"></div>
+    </div>
+  </div>
+</div>
+
+<div class="benefits">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0">
+        <div class="benefit">
+          <%= image_tag 'productivity.png' %>
+          <h3>Productivité</h3>
+          <p>Le transport n’est plus une source de stress et de fatigue, vos salariés arrivent dans les meilleures dispositions</p>
+        </div>
+      </div>
+
+      <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0">
+        <div class="benefit">
+          <%= image_tag 'attractivity.png' %>
+          <h3>Attractivité</h3>
+          <p>Le transport est le second critère d’acceptation d’un emploi après le salaire</p>
+        </div>
+      </div>
+
+      <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0">
+        <div class="benefit">
+          <%= image_tag 'optimisation.png' %>
+          <h3>Optimisation</h3>
+          <p>Transformez un coût (versement transport, abonnement transport...) en investissement sur vos salariés</p>
+        </div>
+      </div>
+
+      <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-2">
+        <div class="benefit">
+          <%= image_tag 'responsible.png' %>
+          <h3>Image</h3>
+          <p>Valorisez l’image de votre entreprise grâce à un engagement citoyen et responsable</p>
+        </div>
+      </div>
+
+      <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0">
+        <div class="benefit">
+          <%= image_tag 'regulation.png' %>
+          <h3>Réglementation</h3>
+          <p>Anticipez le durcissement de la règlementation des transports urbains, particulièrement sur les voitures individuelles</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section-title">
+  <div class="container">
+    <h2>La mise en place Kariol</h2>
+  </div>
+</div>
+
+<div class="explanations">
+  <div class="container">
+    <div class="explanation">
+      <div class="row gutter-0">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-0">
+          <div class="explanation-content">
+            <div class="steps">
+              1
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-10 col-xs-offset-1 col-sm-9 col-sm-offset-0">
+          <div class="explanation-content explanation-content-left">
+            <h3>Lancement du service pour vos salariés</h3>
+            <p>Via une communication digitale et des animations terrain assurées par l'équipe Kariol. Bien communiquer est une phase indispensable. L’inscription de vos salariés rendra le service possible.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="explanation">
+      <div class="row gutter-0">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-0">
+          <div class="explanation-content">
+            <div class="steps">
+              2
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-10 col-xs-offset-1 col-sm-9 col-sm-offset-0">
+          <div class="explanation-content explanation-content-left">
+            <h3>Création de lignes appropriées</h3>
+            <p>Suite aux inscriptions, notre technologie traite les besoins de vos salariés. Des lignes intelligentes sont créées pour un ramassage et un retour optimisés.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="explanation">
+      <div class="row gutter-0">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-0">
+          <div class="explanation-content">
+            <div class="steps">
+              3
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-10 col-xs-offset-1 col-sm-9 col-sm-offset-0">
+          <div class="explanation-content explanation-content-left">
+            <h3>Paiement à l'usage</h3>
+            <p>Vous ne payez que ce qui est consommé, des comptes-rendus vous sont communiqués périodiquement.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="explanation">
+      <div class="row gutter-0">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-3 col-sm-offset-0">
+          <div class="explanation-content">
+            <div class="steps">
+              4
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-10 col-xs-offset-1 col-sm-9 col-sm-offset-0">
+          <div class="explanation-content explanation-content-left">
+            <h3>Réponse efficace à vos plans de déplacements entreprise</h3>
+            <p>Vous répondez à vos PDE ou plans de mobilité et investissez pour le bien-être de vos salariés. Prenez intégralement en charge le service et bénéficiez du remboursement de votre versement transport.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section-title">
+  <div class="container">
+    <%= image_tag 'coral_blue_van_icon.png' %>
+    <h2>Kariol est adapté à l'ensemble des entreprises d'une même zone d'activité, vous permettant un plan de déplacement inter-entreprises</h2>
+  </div>
+</div>
+
+<div class="cta">
+    <div class="container">
+      <button type="button" class="btn btn-info" data-toggle="modal" data-target="#businessRequestModal">
+        Demander une simulation
+      </button>
+    </div>
+</div>
+
+<div class="section-title">
+  <div class="container">
+    <h2>Vous souhaitez réduire le coût de vos déplacements professionnels en les mutualisant ?</h2>
+    <%= link_to 'Consultez notre solution', enterprise_pro_path, class: 'btn btn-primary' %>
+  </div>
+</div>
+
+<div class="team">
+  <div class="container">
+    <div class="team-title">
+      <h2>Une équipe fondée autour d'un objectif commun</h2>
+      <h4>Rendre les villes plus durables et agréables à vivre. Notre mission ? Rendre le transport domicile-travail plus intelligent !</h4>
+    </div>
+    <div class="row">
+      <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-3 col-md-offset-0">
+        <div class="team-member">
+          <%= image_tag 'nicolas.png' %>
+          <h3>Nicolas Dinouard</h3>
+          <h4>Business Développement</h4>
+          <p>Le voyage est une grande partie de ma vie, j’aimerais rendre les voyages du quotidien plus intelligents</p>
+        </div>
+      </div>
+
+      <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-3 col-md-offset-0">
+        <div class="team-member">
+          <%= image_tag 'francoisl.png' %>
+          <h3>François Larratte</h3>
+          <h4>Marketing & Communication</h4>
+          <p>De nature très urbaine, je cherche à apporter une solution pour aider les villes à se vider des voitures individuelles</p>
+        </div>
+      </div>
+
+      <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-3 col-md-offset-0">
+        <div class="team-member">
+          <%= image_tag 'francoisc.png' %>
+          <h3>François Catuhe</h3>
+          <h4>Opérations & Technique</h4>
+          <p>J'aime quand tout est bien optimisé, toutes ces voitures sur les routes le matin pointent la nécessité de trouver une alternative</p>
+        </div>
+      </div>
+
+      <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-3 col-md-offset-0">
+        <div class="team-member">
+          <%= image_tag 'aurelie.png' %>
+          <h3>Aurélie Ronfaut</h3>
+          <h4>Directrice de création</h4>
+          <p>Sensible à l'environnement, je défends l'harmonie entre vie professionnelle et vie personnelle, et cela passe aussi par le transport</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="businessRequestModal" tabindex="-1" role="dialog" aria-labelledby="businessRequestModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="businessRequestModalLabel">Demande de simulation</h4>
+      </div>
+
+      <div class="modal-body">
+        <div id="newBusinessRequest">
+          <%= render 'business_requests/form' %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="shareModalContainer"></div>

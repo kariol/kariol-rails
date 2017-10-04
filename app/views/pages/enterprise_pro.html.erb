@@ -15,7 +15,9 @@
   <div class="container">
     <div class="navbar-kariol-content">
       <div class="navbar-kariol-brand">
-        <%= image_tag 'logo.png' %>
+        <%= link_to enterprise_path do %>
+          <%= image_tag 'logo.png' %>
+        <% end %>
         <i>pro</i>
       </div>
 
@@ -160,6 +162,13 @@
         Contactez-nous
       </button>
     </div>
+</div>
+
+<div class="section-title">
+  <div class="container">
+    <h2>Vous souhaitez offrir une solution à vos salariés pour les trajets domicile-travail ?</h2>
+    <%= link_to 'Consultez notre solution', enterprise_home_path, class: 'btn btn-primary' %>
+  </div>
 </div>
 
 <div class="team">

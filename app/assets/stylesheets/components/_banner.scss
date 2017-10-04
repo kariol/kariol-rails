@@ -18,10 +18,20 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+    }
+    &-brand {
+      display: flex;
+      align-items: flex-start;
       img {
         height: 60px;
       }
-      div img {
+      i {
+        margin-left: 5px;
+        color: white;
+      }
+    }
+    &-cta {
+      img {
         height: 36px;
         margin-right: 10px;
       }
