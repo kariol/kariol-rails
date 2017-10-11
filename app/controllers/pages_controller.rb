@@ -1,15 +1,15 @@
 class PagesController < ApplicationController
-  def root
+  def home
     @commute_request = CommuteRequest.new(origin: Address.new, destination: Address.new)
   end
 
   def enterprise; end
 
-  def enterprise_home
+  def daily
     @business_request = BusinessRequest.new(address: Address.new)
   end
 
-  def enterprise_pro
+  def business
     @pro_request = ProRequest.new
   end
 

@@ -6,12 +6,10 @@ Rails.application.routes.draw do
 
   mount ForestLiana::Engine => '/forest'
 
-  root to: 'pages#root'
+  root to: 'pages#home'
   get 'entreprise', to: 'pages#enterprise', as: :enterprise
-  scope 'entreprise', as: :enterprise do
-    get 'home', to: 'pages#enterprise_home'
-    get 'pro', to: 'pages#enterprise_pro'
-  end
+  get 'daily', to: 'pages#daily'
+  get 'business', to: 'pages#business'
   get 'legal', to: 'pages#legal'
 
   resources :business_requests, only: [ :create ]
