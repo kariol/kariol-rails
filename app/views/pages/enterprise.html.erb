@@ -11,30 +11,30 @@
     </div>
   </div>
   <div class="banner-large-container background-hidden-xs" style="background-image: url('<%= image_path 'banner-alternate.png' %>');">
-    <div class="banner-content background-hidden-xs" style="background-image: url('<%= image_path 'banner.png' %>');">
-      <div class="banner-spacer hidden-xs hidden-sm"></div>
-
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-10 col-xs-offset-1 col-sm-9 col-sm-offset-3 col-md-7 col-md-offset-5">
-            <div class="">
-              <%= link_to 'daily', daily_path %>
+    <div class="banner-content background-hidden-xs flex-row pb-0" style="background-image: linear-gradient(225deg, rgba(229, 236, 234, 0), rgba(229, 236, 234, 0.6)), url('<%= image_path 'banner.png' %>');">
+      <div class="container h-100p-no-xs">
+        <div class="row h-100p-no-xs">
+          <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-4 col-md-offset-1 h-100p-no-xs">
+            <div class="flex flex-column space-between text-center h-100p-no-xs">
+              <div class="banner-spacer hidden-xs"></div>
+              <h4>Adoptez notre service de navettes partagées intelligentes et valorisez le trajet domicile-travail de vos salariés avec Kariol Daily</h4>
+              <%= link_to daily_path do %>
+                <%= image_tag 'roadsign_kariol_daily.png' %>
+              <% end %>
+              <div class="h-50-xs"></div>
+            </div>
+          </div>
+          <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-md-4 col-md-offset-2 h-100p-no-xs">
+            <div class="flex flex-column space-between text-center h-100p-no-xs">
+              <div class="banner-spacer hidden-xs"></div>
+              <h4>Embarquez dans nos navettes partagées à destination des gares et aéroports et optimisez vos déplacements professionnels avec Kariol Business</h4>
+              <%= link_to business_path do %>
+                <%= image_tag 'roadsign_kariol_business.png' %>
+              <% end %>
             </div>
           </div>
         </div>
       </div>
-
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-10 col-xs-offset-1 col-sm-9 col-sm-offset-3 col-md-7 col-md-offset-5">
-            <div class="">
-              <%= link_to 'business', business_path %>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="banner-spacer visible-sm"></div>
     </div>
   </div>
 </div>

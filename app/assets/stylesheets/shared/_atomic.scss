@@ -11,6 +11,17 @@
   }
 }
 
+@media(min-width:768px){
+  .h-100p-no-xs {
+    height: 100%;
+  }
+}
+
+@media(max-width:767px){
+  .h-50-xs {
+    height: 50px;
+  }
+}
 .h-30 {
   height: 30px;
 }
@@ -41,6 +52,10 @@
   margin-bottom: 20px !important;
 }
 
+.pb-0 {
+  padding-bottom: 0px !important;
+}
+
 .bg-marine {
   background-color: $marine;
 }
@@ -52,6 +67,28 @@
 }
 .bg-sea-green {
   background-color: $sea-green;
+}
+
+.flex {
+  display: flex;
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-column {
+  flex-direction: column;
+}
+.align-center {
+  align-items: center;
+}
+.align-stretch {
+  align-items: stretch;
+}
+.space-between {
+  justify-content: space-between;
+}
+.space-around {
+  justify-content: space-around;
 }
 
 .flex-center-space-between {
