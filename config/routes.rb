@@ -12,8 +12,6 @@ Rails.application.routes.draw do
   get 'business', to: 'pages#business'
   get 'legal', to: 'pages#legal'
 
-  get 'jeu', to: redirect('https://docs.google.com/forms/d/e/1FAIpQLSeBQZHSxbjdnSOklHUd2ryeVewsK4t_MlI3_hUqeo--gbnKsQ/viewform?usp=kariol_co')
-
   resources :business_requests, only: [ :create ]
   resources :commute_requests, only: [ :create ]
   resources :pro_requests, only: [ :create ]
