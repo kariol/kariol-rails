@@ -1,11 +1,11 @@
 /* Main navbar */
 .navbar-kariol {
-  box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.07), 0 1px 0 0 rgba(0, 0, 0, 0.03);
   color: white;
   transition: all 0.3s ease;
   height: 80px;
   &-content {
-    padding: 10px 0;
+    padding: 20px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -14,7 +14,7 @@
     display: flex;
     align-items: flex-start;
     img {
-      height: 60px;
+      height: 40px;
     }
     i {
       margin-left: 5px;
@@ -55,8 +55,8 @@
 /* Dropdown menu */
 .navbar-kariol-dropdown-menu {
   margin-top: 15px;
-  box-shadow: 1px 1px 4px #E6E6E6;
-  border-color: #E6E6E6;
+  box-shadow: 1px 1px 4px #e6e6e6;
+  border-color: #e6e6e6;
 }
 .navbar-kariol-dropdown-menu li > a {
   transition: color 0.3s ease;
@@ -79,6 +79,6 @@
   top: -6px;
   background-color: white;
   transform: rotate(45deg);
-  border-left: 1px solid #E6E6E6;
-  border-top: 1px solid #E6E6E6;
+  border-left: 1px solid #e6e6e6;
+  border-top: 1px solid #e6e6e6;
 }
