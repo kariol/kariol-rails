@@ -1,22 +1,10 @@
 <div class="navbar-fixed-top bg-sea-green">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
-        <div class="atd-none flex-center-space-between h-30 fs-14">
-          <%= link_to 'Accueil', root_path %>
-          <%= link_to 'BackSit Daily', daily_path %>
-          <%= link_to 'BackSit Business', business_path %>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <div class="navbar-kariol bg-emerald">
     <div class="container">
       <div class="navbar-kariol-content">
         <div class="navbar-kariol-brand">
-          <%= link_to enterprise_path do %>
-            <%= image_tag 'logo_kariol_daily.png' %>
+          <%= link_to root_path do %>
+            <%= image_tag 'logo.png' %>
           <% end %>
         </div>
 
@@ -31,7 +19,7 @@
 </div>
 
 <div class="banner">
-  <div class="mt-110"></div>
+  <div class="mt-80"></div>
   <div class="banner-large-container">
     <div class="banner-content banner-content-bottom" style="background-image: url('<%= image_path 'banner-enterprise.jpg' %>');">
       <div class="banner-headline banner-headline-center">
